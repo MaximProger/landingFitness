@@ -8,37 +8,56 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 	<!-- Fontawesome -->
 	<script src="https://kit.fontawesome.com/41064ceb63.js"></script>
+	<!-- Slick -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" href="./css/styles.min.css">
 	<title>Фитнес</title>
 </head>
 <body>
 	<header class="header">
-		<div class="container container--fluid">
+		<div class="container--fluid">
 			<div class="header__inner">
-				<!-- <nav class="nav">
-					<div class="nav__menu">
-						<a href="#" class="nav__link">ГЛАВНАЯ</a>
-						<a href="#" class="nav__link">ГЛАВНАЯ</a>
-						<a href="#" class="nav__link">ГЛАВНАЯ</a>
-						<a href="#" class="nav__link">ГЛАВНАЯ</a>
-						<a href="#" class="nav__link">ГЛАВНАЯ</a>
-						<a href="#" class="nav__link">ГЛАВНАЯ</a>
-					</div> -->
-					<img src="./img/burger.png" alt="Burger menu">
+				<img src="./img/burger.png" class="nav__burger active" id="burgerOpen" alt="Burger menu">
+				<img src="./img/close.svg" class="nav__burger" id="burgerClose" alt="Burger menu">
+				<nav class="nav" id="nav">
+						<div class="container">
+							<div class="nav__inner">
+								<div class="nav__list">
+									<a href="#" class="nav__link" id="link__03" data-mouse="#03">АКЦИИ</a>
+									<a href="#" class="nav__link" id="link__02" data-mouse="#02">ОТЗЫВЫ</a>
+									<a href="#" class="nav__link  active" id="link__01" data-mouse="#01">ГЛАВНАЯ</a>
+									<a href="#" class="nav__link" id="link__04" data-mouse="#04">О ТРЕНЕРЕ</a>
+									<a href="#" class="nav__link" id="link__05" data-mouse="#05">ТРЕНИРОВКИ</a>
+								</div>
+
+								<div class="nav__number">
+									<div class="nav__number__item active" id="01">01</div>
+									<div class="nav__number__item" id="02">02</div>
+									<div class="nav__number__item" id="03">03</div>
+									<div class="nav__number__item" id="04">04</div>
+									<div class="nav__number__item" id="05">05</div>
+								</div>
+							</div>
+							<button type="button" class="btn btn--yellow">Заказать звонок</button>
+						</div>
 				</nav>
 				<div class="header__phone">8 (985) <span class="header__phone__large">777 34 56</span></div>
 			</div>
 		</div>
 	</header>
 
-	<section class="intro">
+	<section class="intro" id="intro">
 		<div class="container">
 			<div class="intro__inner">
+				<img src="./img/prof.svg" class="intro__img__pfroffesional" alt="Professional">
+				<img src="./img/Fitness.svg" class="intro__img__fitness" alt="Fitness">
 				<div class="intro__about">
-					<h1 class="intro__title">Фитнес тренер</h1>
-					<h2 class="intro__subtitle">Ирина Петрова</h2>
+					<div class="intro__header">
+						<h1 class="intro__title">Фитнес тренер</h1>
+						<h2 class="intro__subtitle contur">Ирина Петрова</h2>
+					</div>
 					<div class="intro__info">
-						ПЕРВАЯ ТРЕНИРОВКА <span class="intro__info__large">бесплатно</span>
+						ПЕРВАЯ ТРЕНИРОВКА <span class="contur--violet intro__info__large">бесплатно</span>
 					</div>
 					<button type="button" class="btn btn--intro">Записаться</button>
 					<div class="social">
@@ -100,10 +119,25 @@
 			</div>
 			<div class="tranings__inner">
 
-				<div class="tranings__item">
+				<div class="tranings__item" id="traningItem-1">
 					<div class="tranings__item__photo">
 						<img src="./img/streching.png" alt="стретчинг изображение">
-						<img src="./img/рамка.svg" alt="Border" class="tranings__item__border">
+						<img src="./img/border.svg" alt="Border" class="tranings__item__border" id="traningBorder-1">
+						<div class="tranings__item__content" id="traningContent-1">
+							<h4 class="tranings__item__content__title">ПРОГРАММА ВКЛЮЧАЕТ:</h4>
+							<p class="tranings__item__content__description">
+								— Программа питания<br>
+								— Индивидуальные занятия<br>
+							   — Программа тренировок
+							</p>
+							<div class="tranings__item__content__fotter">
+								<button type="button" class="btn btn--yellow2">Заказать звонок</button>
+								<div class="tranings__item__content__price">
+									Стоимость:<br>
+									<span>7 500руб.</span>
+								</div>
+							</div>
+						</div>
 					</div>
 					<h4 class="tranings__item__title">
 						<img src="./img/line-title.svg" alt="-">
@@ -111,10 +145,25 @@
 					</h4>
 				</div>
 
-				<div class="tranings__item">
+				<div class="tranings__item" id="traningItem-2">
 					<div class="tranings__item__photo">
 						<img src="./img/pohudenie.png" alt="стретчинг изображение">
-						<img src="./img/рамка.svg" alt="Border" class="tranings__item__border">
+						<img src="./img/border.svg" alt="Border" class="tranings__item__border" id="traningBorder-2">
+						<div class="tranings__item__content" id="traningContent-2">
+							<h4 class="tranings__item__content__title">ПРОГРАММА ВКЛЮЧАЕТ:</h4>
+							<p class="tranings__item__content__description">
+								— Программа питания<br>
+								— Индивидуальные занятия<br>
+							   — Программа тренировок
+							</p>
+							<div class="tranings__item__content__fotter">
+								<button type="button" class="btn btn--yellow2">Заказать звонок</button>
+								<div class="tranings__item__content__price">
+									Стоимость:<br>
+									<span>7 500руб.</span>
+								</div>
+							</div>
+						</div>
 					</div>
 					<h4 class="tranings__item__title">
 						<img src="./img/line-title.svg" alt="-">
@@ -122,10 +171,25 @@
 					</h4>
 				</div>
 
-				<div class="tranings__item">
+				<div class="tranings__item" id="traningItem-3">
 					<div class="tranings__item__photo">
 						<img src="./img/streching.png" alt="стретчинг изображение">
-						<img src="./img/рамка.svg" alt="Border" class="tranings__item__border">
+						<img src="./img/border.svg" alt="Border" class="tranings__item__border" id="traningBorder-3">
+						<div class="tranings__item__content" id="traningContent-3">
+							<h4 class="tranings__item__content__title">ПРОГРАММА ВКЛЮЧАЕТ:</h4>
+							<p class="tranings__item__content__description">
+								— Программа питания<br>
+								— Индивидуальные занятия<br>
+							   — Программа тренировок
+							</p>
+							<div class="tranings__item__content__fotter">
+								<button type="button" class="btn btn--yellow2">Заказать звонок</button>
+								<div class="tranings__item__content__price">
+									Стоимость:<br>
+									<span>7 500руб.</span>
+								</div>
+							</div>
+						</div>
 					</div>
 					<h4 class="tranings__item__title">
 						<img src="./img/line-title.svg" alt="-">
@@ -133,10 +197,25 @@
 					</h4>
 				</div>
 
-				<div class="tranings__item">
+				<div class="tranings__item" id="traningItem-4">
 					<div class="tranings__item__photo">
 						<img src="./img/consultation.png" alt="стретчинг изображение">
-						<img src="./img/рамка.svg" alt="Border" class="tranings__item__border">
+						<img src="./img/border.svg" alt="Border" class="tranings__item__border" id="traningBorder-4">
+						<div class="tranings__item__content" id="traningContent-4">
+							<h4 class="tranings__item__content__title">ПРОГРАММА ВКЛЮЧАЕТ:</h4>
+							<p class="tranings__item__content__description">
+								— Программа питания<br>
+								— Индивидуальные занятия<br>
+							   — Программа тренировок
+							</p>
+							<div class="tranings__item__content__fotter">
+								<button type="button" class="btn btn--yellow2">Заказать звонок</button>
+								<div class="tranings__item__content__price">
+									Стоимость:<br>
+									<span>7 500руб.</span>
+								</div>
+							</div>
+						</div>
 					</div>
 					<h4 class="tranings__item__title">
 						<img src="./img/line-title.svg" alt="-">
@@ -157,7 +236,7 @@
 						<img src="./img/line-sm.svg" alt="-" class="tranings__line">
 						<h2 class="title title--reviews">ОТЗЫВЫ</h2>
 					</div>
-					<h2 class="reviews__title">ТРЕНИРУЙСЯ<br> <span>ВМЕСТЕ </span> С НАМИ</h2>
+					<h2 class="reviews__title"><span class="contur reviews__title__contur">ТРЕНИРУЙСЯ</span><br> ВМЕСТЕ <span class="contur reviews__title__contur">С НАМИ</span></h2>
 					<div class="reviews__footer">
 						<button class="btn btn--big"><span>БЕСПЛАТНАЯ ТРЕНИРОВКА</span> <img src="./img/arrow.svg" alt="->"></button>
 						<div class="social">
@@ -175,9 +254,20 @@
 					</div>
 				</div>
 					<div class="reviews__photo">
-						<img src="./img/arrow-white.svg" alt="Left">
-						<img src="./img/phone.png" alt="Phone">
-						<img src="./img/arrow-violet.svg" alt="right">
+						<img src="./img/arrowPrev.png" alt="Left" id="sliderPrev">
+						<img src="./img/phone-black.png" alt="Phone">
+						<img src="./img/arrowNext.png" alt="right" id="sliderNext">
+						<div class="reviews__phone__content" id="phoneSlider">
+							<div>
+								<img src="./img/phone-content.png" alt="">
+							</div>
+							<div>
+								<img src="./img/phone-content.png" alt="">
+							</div>
+							<div>
+								<img src="./img/phone-content.png" alt="">
+							</div>
+						</div>
 					</div>
 				
 			</div>
@@ -199,10 +289,10 @@
 						<div class="offers__description__content">
 							<div class="offers__description__title">
 								<h4>ОДИН + ОДИН = ?</h4>
-								<img src="./img/offers__line.svg" alt="-">
+								<!-- <img src="./img/offers__line.svg" class="offers__line" alt="-"> -->
 							</div>
 							<div class="offers__description__text">
-								<img src="./img/offers__line__big.svg" alt="/">
+								<!-- <img src="./img/offers__line__big.svg" alt="/"> -->
 								<p>
 									Закажите две тренировки по стретчингу и получите третью <b>в подарок</b>
 								</p>
@@ -217,10 +307,10 @@
 						<div class="offers__description__content">
 							<div class="offers__description__title">
 								<h4>УДАР ПО ЖИРУ!</h4>
-								<img src="./img/offers__line.svg" alt="-">
+								<!-- <img src="./img/offers__line.svg" class="offers__line" alt="-"> -->
 							</div>
 							<div class="offers__description__text">
-								<img src="./img/offers__line__big.svg" alt="/">
+								<!-- <img src="./img/offers__line__big.svg" alt="/"> -->
 								<p>
 									Только в феврале персональные занятия на 10 тренировок <b>со скидкой 15%</b> 
 								</p>
@@ -229,17 +319,17 @@
 					</div>
 				</div>
 
-				<!-- <div class="offers__item">
+				<div class="offers__item">
 					<img src="./img/offers__img-3.png" alt="offers__img" class="offers__img">
 					<div class="offers__description">
 						<div class="offers__description__content">
 							<div class="offers__description__title">
 								<h4>ЕЩЕ НЕ ГОТОВ 
 									К ЛЕТУ?</h4>
-								<img src="./img/offers__line.svg" alt="-">
+								<!-- <img src="./img/offers__line.svg" class="offers__line" alt="-"> -->
 							</div>
 							<div class="offers__description__text">
-								<img src="./img/offers__line__big.svg" alt="/">
+								<!-- <img src="./img/offers__line__big.svg" alt="/"> -->
 								<p>
 									Хватит ждать! Только в январе программа питания <b>со скидкой 5%</b>
 								</p>
@@ -253,25 +343,24 @@
 					<div class="offers__description">
 						<div class="offers__description__content">
 							<div class="offers__description__title">
-								<h4>ОЧЕНЬ ВЕСЕННИЕ 
-									ЦЕНЫ!</h4>
-								<img src="./img/offers__line.svg" alt="-">
+								<h4>ОЧЕНЬ ВЕСЕННИЕ ЦЕНЫ!</h4>
+								<!-- <img src="./img/offers__line.svg" class="offers__line" alt="-"> -->
 							</div>
 							<div class="offers__description__text">
-								<img src="./img/offers__line__big.svg" alt="/">
+								<!-- <img src="./img/offers__line__big.svg" alt="/"> -->
 								<p>
 									Персональные тренировки в всего за <b>2999 рублей</b>!
 								</p>
 							</div>
 						</div>
 					</div>
-				</div> -->
+				</div>
 			</div>
 		</div>
 	</section>
 
 	<section class="connection">
-		<img src="./img/circle.svg" class="connection__bg" alt="Circle">
+		<img src="./img/circle-big.svg" class="connection__bg" alt="Circle">
 		<div class="container">
 			<div class="connection__inner">
 				<div class="connection__content">
@@ -279,7 +368,7 @@
 						<img src="./img/05.svg" alt="01">
 						<img src="./img/line.svg" class="connection__header__line" alt="__">
 					</div>
-					<h2 class="connection__title title">ПОРАБОТАЕМ <span>ВМЕСТЕ?</span></h2>
+					<h2 class="connection__title title">ПОРАБОТАЕМ <span class="connection__title__contur contur--violet">ВМЕСТЕ?</span></h2>
 					<form class="form">
 						<input class="form__input" type="email" placeholder="Email" required>
 						<input class="form__input" type="text" placeholder="Сообщение" required>
@@ -317,5 +406,14 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- jQuery -->\
+	<script src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <!-- Slick -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- JS -->
+  <script src="./js/scripts.min.js"></script>
 </body>
 </html>
