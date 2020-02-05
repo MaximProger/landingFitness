@@ -2,13 +2,15 @@
 $('#burgerOpen').on('click', function() {
     $(this).removeClass('active');
     $('#burgerClose').addClass('active');
-    $('#nav').addClass('active');
+    $('#nav').show(400);
+    $('body').addClass('active');
 })
 
 $('#burgerClose').on('click', function() {
     $(this).removeClass('active');
     $('#burgerOpen').addClass('active');
-    $('#nav').removeClass('active');
+    $('#nav').hide(400);
+    $('body').removeClass('active');
 })
 
 $("[data-mouse]").on("mouseover", function() {

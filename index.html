@@ -26,30 +26,8 @@
 	<header class="header">
 		<div class="container--fluid">
 			<div class="header__inner">
-				<img src="./img/burger.png" class="nav__burger active" id="burgerOpen" alt="Burger menu">
-				<img src="./img/close.svg" class="nav__burger" id="burgerClose" alt="Burger menu">
-				<nav class="nav" id="nav">
-						<div class="container">
-							<div class="nav__inner">
-								<div class="nav__list">
-									<a href="#" class="nav__link" id="link__03" data-mouse="#03">АКЦИИ</a>
-									<a href="#" class="nav__link" id="link__02" data-mouse="#02">ОТЗЫВЫ</a>
-									<a href="#" class="nav__link  active" id="link__01" data-mouse="#01">ГЛАВНАЯ</a>
-									<a href="#" class="nav__link" id="link__04" data-mouse="#04">О ТРЕНЕРЕ</a>
-									<a href="#" class="nav__link" id="link__05" data-mouse="#05">ТРЕНИРОВКИ</a>
-								</div>
-
-								<div class="nav__number">
-									<div class="nav__number__item active" id="01">01</div>
-									<div class="nav__number__item" id="02">02</div>
-									<div class="nav__number__item" id="03">03</div>
-									<div class="nav__number__item" id="04">04</div>
-									<div class="nav__number__item" id="05">05</div>
-								</div>
-							</div>
-							<button type="button" class="btn btn--yellow">Заказать звонок</button>
-						</div>
-				</nav>
+				<img src="./img/burger.png" class="nav__burger" id="burgerOpen" alt="Burger menu">
+				<!-- <img src="./img/close.svg" class="nav__burger" id="burgerClose" alt="Burger menu"> -->
 				<div class="header__phone">8 (985) <span class="header__phone__large">777 34 56</span></div>
 			</div>
 		</div>
@@ -71,13 +49,13 @@
 					<button type="button" class="btn btn--intro">Записаться</button>
 					<div class="social">
 						<a href="#" class="social__link">
-							<img src="./img/whatsapp.svg" alt="whatsapp" class="social__link__img">
+							<img src="./img/instagram.svg" alt="instagram" class="social__link__img">
 						</a>
 						<a href="#" class="social__link">
 							<img src="./img/facebook.svg" alt="facebook" class="social__link__img">
 						</a>
 						<a href="#" class="social__link">
-							<img src="./img/instagram.svg" alt="instagram" class="social__link__img">
+							<img src="./img/whatsapp.svg" alt="whatsapp" class="social__link__img">
 						</a>
 					</div>
 				</div>
@@ -109,12 +87,13 @@
 					</div>
 					<button class="btn btn--big"><span>БЕСПЛАТНАЯ ТРЕНИРОВКА</span> <img src="./img/arrow.svg" alt="->"></button>
 				</div>
-				<div class="about__photo">
-					<div class="about__photo__wrapper">
-						<img src="./img/about__bg-1.png" class="about__photo__first" alt="about__bg">
-					</div>
-					<img src="./img/about__bg-2.png" class="about__photo__second" alt="about__bg">
-				</div>
+			</div>
+		</div>
+		<div class="about__photo">
+			<div class="about__photo__wrapper">
+				<img src="./img/about__bg-2.png" class="about__photo__second" alt="about__bg">
+				<img src="./img/about__bg-1.png" class="about__photo__first" alt="about__bg">
+				
 			</div>
 		</div>
 	</section>
@@ -237,6 +216,7 @@
 	</section>
 
 	<section class="reviews">
+		<img src="./img/circle.svg" alt="Circle" class="reviews__bg">
 		<div class="container">
 			<div class="reviews__inner">
 				<div class="reviews__content">
@@ -247,16 +227,16 @@
 					</div>
 					<h2 class="reviews__title"><span class="contur reviews__title__contur">ТРЕНИРУЙСЯ</span><br> ВМЕСТЕ <span class="contur reviews__title__contur">С НАМИ</span></h2>
 					<div class="reviews__footer">
-						<button class="btn btn--big"><span>БЕСПЛАТНАЯ ТРЕНИРОВКА</span> <img src="./img/arrow.svg" alt="->"></button>
+						<button class="reviews__btn btn btn--big"><span>БЕСПЛАТНАЯ ТРЕНИРОВКА</span> <img src="./img/arrow.svg" alt="->"></button>
 						<div class="social">
 							<a href="#" class="social__link">
-								<img src="./img/whatsapp.svg" alt="whatsapp" class="social__link__img">
+								<img src="./img/instagram.svg" alt="instagram" class="social__link__img">
 							</a>
 							<a href="#" class="social__link">
 								<img src="./img/facebook.svg" alt="facebook" class="social__link__img">
 							</a>
 							<a href="#" class="social__link">
-								<img src="./img/instagram.svg" alt="instagram" class="social__link__img">
+								<img src="./img/whatsapp.svg" alt="whatsapp" class="social__link__img">
 							</a>
 						</div>
 
@@ -400,13 +380,13 @@
 			<div class="footer__inner">
 				<div class="social">
 					<a href="#" class="social__link">
-						<img src="./img/whatsapp.svg" alt="whatsapp" class="social__link__img">
+						<img src="./img/instagram.svg" alt="instagram" class="social__link__img">
 					</a>
 					<a href="#" class="social__link">
 						<img src="./img/facebook.svg" alt="facebook" class="social__link__img">
 					</a>
 					<a href="#" class="social__link">
-						<img src="./img/instagram.svg" alt="instagram" class="social__link__img">
+						<img src="./img/whatsapp.svg" alt="whatsapp" class="social__link__img">
 					</a>
 				</div>
 				<p class="footer__text">
@@ -416,7 +396,40 @@
 		</div>
 	</footer>
 
-	<!-- jQuery -->\
+	<!-- Nav Modal Window -->
+	<nav class="nav" id="nav">
+		<div class="nav__wrapper">
+			<div class="container--fluid">
+				<div class="nav__header__inner">
+					<!-- <img src="./img/burger.png" class="nav__burger active" id="burgerOpen" alt="Burger menu"> -->
+					<img src="./img/close.svg" class="nav__burger" id="burgerClose" alt="Burger menu">
+					<div class="header__phone">8 (985) <span class="header__phone__large">777 34 56</span></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="nav__inner">
+					<div class="nav__list">
+						<a href="#" class="nav__link" id="link__03" data-mouse="#03">АКЦИИ</a>
+						<a href="#" class="nav__link" id="link__02" data-mouse="#02">ОТЗЫВЫ</a>
+						<a href="#" class="nav__link  active" id="link__01" data-mouse="#01">ГЛАВНАЯ</a>
+						<a href="#" class="nav__link" id="link__04" data-mouse="#04">О ТРЕНЕРЕ</a>
+						<a href="#" class="nav__link" id="link__05" data-mouse="#05">ТРЕНИРОВКИ</a>
+					</div>
+	
+					<div class="nav__number">
+						<div class="nav__number__item active" id="01">01</div>
+						<div class="nav__number__item" id="02">02</div>
+						<div class="nav__number__item" id="03">03</div>
+						<div class="nav__number__item" id="04">04</div>
+						<div class="nav__number__item" id="05">05</div>
+					</div>
+				</div>
+				<button type="button" class="btn btn--yellow">Заказать звонок</button>
+			</div>
+		</div>
+</nav>
+
+	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
