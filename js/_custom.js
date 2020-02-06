@@ -65,11 +65,31 @@ $('#phoneSlider').slick({
     
         })
     
-        $('#sliderNext').on("mouseout", function() {
-            $(this).attr("src","./img/arrowNext.png");
-    
-            })
+    $('#sliderNext').on("mouseout", function() {
+        $(this).attr("src","./img/arrowNext.png");
 
+        })
+
+    $('.arrow__yellow--next').on("mouseover", function() {
+        $(this).attr("src","./img/arrowActiveNext.png");
+    
+        })
+    
+    $('.arrow__yellow--next').on("mouseout", function() {
+        $(this).attr("src","./img/arrowYellow--next.png");
+
+        })
+
+    $('.arrow__yellow--prev').on("mouseover", function() {
+        $(this).attr("src","./img/arrowActivePrev.png");
+    
+        })
+    
+    $('.arrow__yellow--prev').on("mouseout", function() {
+        $(this).attr("src","./img/arrowYellow--prev.png");
+
+        })
+    
 
 // Tranings Item
 
@@ -101,3 +121,40 @@ $('.tranings__item').on("mouseout", function() {
     $('.tranings__item__content').removeClass('active');
     $('.tranings__item__border').attr("src","./img/border.svg");
 })
+
+// установим обработчик события resize
+$(window).resize(function(){
+    if ($(window).width() <= '1024'){
+        // Intro
+        // $('.intro__woman').attr("src","./img/woman--tablet.png");
+        // $('.intro__img__fitness').attr("src","./img/Fitness--tablet.svg");
+
+        // Tranings
+        $('.tranings__inner').addClass('tranings__slider');
+        $('.tranings__item__border').removeAttr('id');
+        $('.tranings__slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            // arrows: false,
+            autoplaySpeed: 2000,
+            nextArrow: $('#traningsNext'),
+            prevArrow: $('#traningsPrev')
+          });
+
+        // Offers
+        $('.offers__title').text('Акции');
+        $('.tranings__inner').addClass('tranings__slider');
+        $('.tranings__item__border').removeAttr('id');
+        $('.offers__inner').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            // arrows: false,
+            autoplaySpeed: 2000,
+            nextArrow: $('#offersNext'),
+            prevArrow: $('#offersPrev')
+          });
+    }
+  });
+   
+  // вызовем событие resize
+  $(window).resize();

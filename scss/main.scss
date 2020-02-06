@@ -9,8 +9,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -21,7 +21,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, main {
 	display: block;
 }
@@ -111,7 +111,7 @@ body {
     -o-font-smoothing: antialiased;
     font-smoothing: antialiased;
     // padding-top: 115px;
-    
+
     &.active {
         overflow: hidden;
     }
@@ -128,10 +128,23 @@ body {
         max-width: 1842px;
         margin: 0 auto;
         padding: 0 22px;
+
+        @media (max-width: 1199px) {
+            max-width: 810px;
+        }
     }
 
     &--tranings {
         max-width: 1300px;
+
+        @media (max-width: 1199px) {
+            max-width: 810px;
+        }
+    }
+
+    @media (max-width: 1199px) {
+        max-width: 810px;
+        position: relative;
     }
 }
 
@@ -152,7 +165,7 @@ body {
     -moz-user-select: none;
     -khtml-user-select: none;
     user-select: none;
-    
+
 
     &--big {
         padding: 10px 15px;
@@ -184,6 +197,10 @@ body {
         &:hover {
             filter: saturate(130%)
         }
+
+        @media (max-width: $tablet) {
+            margin-left: -23px;
+        }
     }
 
     &--yellow {
@@ -197,7 +214,7 @@ body {
     }
 
     &--yellow2 {
-        background: url('../img/btn-yellow.svg') center no-repeat;
+        background: url('../img/btn__yellow--sm.svg') center no-repeat;
         color: $violet;
         &:hover {
             filter: saturate(130%)
@@ -227,10 +244,25 @@ body {
     &--about {
         margin-top: -20px;
         margin-bottom: 46px;
+
+        @media (max-width: $tablet) {
+            margin: 0 0 0 137px;
+        }
     }
 
     &--reviews {
         color: #fff;
+    }
+
+    @media (max-width: $tablet) {
+        line-height: 65px;
+        font-size: 54px;
+    }
+}
+
+.br {
+    @media (max-width: $tablet) {
+        display: none;
     }
 }
 
@@ -255,6 +287,18 @@ body {
     border-radius: 5px;
 }
 
+.arrow__yellow {
+    cursor: pointer;
+    filter: drop-shadow(0 5px 5px rgba(0,0,0,.2));
+    outline: none;
+    display: none;
+    z-index: 1000;
+
+    @media (max-width: $tablet) {
+        display: block;
+    }
+}
+
 // Header
 
 .header {
@@ -277,6 +321,10 @@ body {
 .header__phone {
     color: #fff;
     font-size: 18px;
+
+    @media (max-width: $tablet) {
+        color: $violet;
+    }
 }
 
 .header__phone__large {
@@ -384,6 +432,11 @@ body {
     background-size: cover;
     min-height: 770px;
     position: relative;
+
+    @media (max-width: $tablet) {
+        background: url("../img/intro__bg--tablet.svg") center no-repeat;
+        min-height: 928.5px;
+    }
 }
 
 .intro__inner {
@@ -393,6 +446,10 @@ body {
     position: relative;
     z-index: 100;
     min-height: 770px;
+
+    @media (max-width: $tablet) {
+        min-height: 928.5px;
+    }
 }
 
 .intro__img__pfroffesional {
@@ -400,6 +457,11 @@ body {
     z-index: -1;
     top: 20%;
     right: 46%;
+
+    @media (max-width: $tablet) {
+        right: 25%;
+        top: 19%;
+    }
 }
 
 .intro__img__fitness {
@@ -407,17 +469,34 @@ body {
     bottom: 23%;
     right: 24%;
     z-index: -1;
+
+    @media (max-width: $tablet) {
+        width: 824px;
+        height: 252px;
+        bottom: 22%;
+        right: 13%;
+    }
 }
 
 .intro__about {
     position: absolute;
     bottom: -29px;
+
+    @media (max-width: $tablet) {
+        bottom: 110px;
+    }
 }
 
 .intro__header {
     position: absolute;
     width: 620px;
     bottom: 420px;
+
+    @media (max-width: $tablet) {
+        left: 0;
+        top: -160px;
+    }
+
 }
 
 .intro__title {
@@ -442,13 +521,24 @@ body {
     font-size: 22px;
     line-height: 24px;
     color: $violet;
-
 }
 
 .intro__info__large {
     text-transform: uppercase;
     margin-left: 10px;
     color: #EAE151;
+
+    @media (max-width: $tablet) {
+        display: block;
+    }
+}
+
+.intro__social {
+    @media (max-width: $tablet) {
+        position: absolute;
+        left: 0;
+        bottom: -135px;
+    }
 }
 
 .intro__photo {
@@ -457,6 +547,20 @@ body {
     top: 0px;
     width: 988px;
     height: 794px;
+
+    // img {
+    //     @media (max-width: $tablet) {
+    //         width: 668px;
+    //         height: 853.47px;
+    //     }
+    // }
+
+    @media (max-width: $tablet) {
+        // width: 668px;
+        // height: 853.47px;
+        top: 139px;
+        left: 235px;
+    }
 }
 
 // Social
@@ -490,9 +594,25 @@ body {
     // align-items: flex-start;
 }
 
+.about__wrapper {
+    @media (max-width: $tablet) {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        position: absolute;
+        left: 141px;
+        top: 90px;
+        width: 780px;
+    }
+}
+
 .about__info {
     width: 570px;
     padding-top: 220px;
+
+    @media (max-width: $tablet) {
+        width: 100%;
+    }
 }
 
 .about__header {
@@ -501,10 +621,20 @@ body {
     align-items: center;
     padding-top: 18px;
     // margin-bottom: 40px;
+
+    @media (max-width: $tablet) {
+        padding-top: 0;
+    }
 }
 
 .abot__header__line {
     margin-left: 25px;
+}
+
+.about__text {
+    @media (max-width: $tablet) {
+        margin-top: 617px;
+    }
 }
 
 .about__text__section {
@@ -515,11 +645,24 @@ body {
 
     &:last-child {
         margin-bottom: 85px;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 45px;
+        }
     }
+
+    // @media (max-width: $tablet) {
+    //     margin-top: 2
+    //     0px;
+    // }
 }
 
 .about__btn {
     margin-left: 10px;
+
+    @media (max-width: $tablet) {
+        margin-left: 0;
+    }
 }
 
 .about__photo {
@@ -545,6 +688,14 @@ body {
     bottom: 0;
     left: 15px;
     z-index: 1000;
+
+    @media (max-width: $tablet) {
+        width: 373.2px;
+        height: 432.88px;
+        position: relative;
+        margin-top: 238px;
+        left: 0;
+    }
 }
 
 .about__photo__second {
@@ -552,11 +703,21 @@ body {
     top: 0;
     right: 0;
     z-index: -1;
+
+    @media (max-width: $tablet) {
+        width: 688.3px;
+        height: 421.74px;
+        top: 80px;
+    }
 }
 
 // Tranings
 .tranings {
     padding-top: 142px;
+
+    @media (max-width: $tablet) {
+        padding-top: 51px;
+    }
 }
 
 .tranings__header {
@@ -575,11 +736,29 @@ body {
     justify-content: center;
     align-items: center;
     margin-left: 50px;
+    position: relative;
+}
+
+.tranings__arrow {
+    position: absolute;
+    top: 49%;
+
+    &--prev {
+        left: 20px;
+
+    }
+
+    &--next {
+        right: 20px;
+    }
 }
 
 .tranings__item {
     width: 25%;
     cursor: pointer;
+    @media (max-width: $tablet) {
+        width: 100%;
+    }
 }
 
 .tranings__item__title {
@@ -595,6 +774,14 @@ body {
     span {
         margin-left: 10px;
     }
+
+    @media (max-width: $tablet) {
+        font-size: 24px;
+        line-height: 29px;
+        justify-content: center;
+        margin-top: 52px;
+        margin-right: 46px;
+    }
 }
 
 .tranings__item__photo {
@@ -605,7 +792,7 @@ body {
     display: none;
     position: absolute;
     top: 36px;
-    left: 136px;
+    left: 145px;
     background: url('../img/tranings__bg.svg') no-repeat center;
     width: 480px;
     height: 282px;
@@ -614,6 +801,13 @@ body {
 
     &.active {
         display: block;
+    }
+
+    @media (max-width: $tablet) {
+        display: block;
+        background: none;
+        left: 180px;
+        // width: 257px;
     }
 }
 
@@ -624,6 +818,11 @@ body {
     line-height: 24px;
     color: $violet;
     margin-bottom: 33px;
+
+    @media (max-width: $tablet) {
+        margin-top: 11px;
+
+    }
 }
 
 .tranings__item__content__description {
@@ -631,11 +830,25 @@ body {
     margin-left: 100px;
 }
 
-.tranings__item__content__fotter {
+.tranings__item__content__footer {
     margin-top: 39px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    @media (max-width: $tablet) {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-right: 50px;
+
+    }
+}
+
+.tranings__btn {
+    @media (max-width: $tablet) {
+        width: 100%;
+        order: 2;
+    }
 }
 
 .tranings__item__content__price {
@@ -649,6 +862,15 @@ body {
         line-height: 24px;
         color: $violet;
     }
+
+    @media (max-width: $tablet) {
+        width: 100%;
+        margin-bottom: 35px;
+        order: 1;
+        margin-right: 53px;
+    }
+
+
 }
 
 .tranings__item__border {
@@ -677,6 +899,10 @@ body {
             position: absolute;
             top: 49%;
             left: 99.25px;
+
+            @media (max-width: $tablet) {
+                width: 87px;
+            }
         }
     }
 
@@ -736,6 +962,11 @@ body {
         }
     }
 
+    @media (max-width: $tablet) {
+        line-height: 65px;
+        font-size: 54px;
+    }
+
 }
 
 // Reviews
@@ -744,6 +975,12 @@ body {
     background: url('../img/bg_reviews.png') no-repeat center;
     position: relative;
     z-index: 5;
+    position: relative;
+
+    @media (max-width: $tablet) {
+        background: url('../img/reviews__bg--tablet.svg') no-repeat center;
+        padding-top: 190px;
+    }
 }
 
 .reviews__bg {
@@ -751,6 +988,10 @@ body {
     bottom: 65px;
     left: 150px;
     z-index: -1;
+
+    @media (max-width: $tablet) {
+        display: none;
+    }
 }
 
 .reviews__inner {
@@ -763,6 +1004,11 @@ body {
 .reviews__content {
     width: 60%;
     padding-top: 90px;
+
+    @media (max-width: $tablet) {
+        width: 40%;
+    }
+
 }
 
 .reviews__header {
@@ -770,6 +1016,12 @@ body {
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 37px;
+
+    @media (max-width: $tablet) {
+        position: absolute;
+        top: -95px;
+        left: 182px;
+    }
 }
 
 .reviews__title {
@@ -783,21 +1035,37 @@ body {
     span {
         font-family: 'Lato', sans-serif;
     }
+
+    @media (max-width: $tablet) {
+        margin-bottom: 50px;
+    }
 }
 
-// .reviews__title__contur {
-//     // color: $violet; // !?
-    
-// }
+.reviews__title__contur {
+    @media (max-width: $tablet) {
+        display: block;
+    }
+
+}
 
 .reviews__footer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    @media (max-width: $tablet) {
+        flex-wrap: wrap;
+        width: 357px;
+    }
 }
 
 .reviews__btn {
     margin-right: 65px;
+
+    @media (max-width: $tablet) {
+        margin-right: 0;
+        margin-bottom: 58px;
+    }
 }
 
 .reviews__photo {
@@ -814,6 +1082,10 @@ body {
 
 .reviews__photo__phone {
     position: relative;
+    @media (max-width: $tablet) {
+        height: 565.85px;
+        width: 308.94px;
+    }
 }
 
 .reviews__phone__content {
@@ -821,18 +1093,40 @@ body {
     width: 275.6px;
     bottom: 47px;
     left: 105px;
+
+    @media (max-width: $tablet) {
+        height: 484.63px;
+        width: 223.96px;
+        bottom: 41px;
+        left: 95px;
+    }
+
+
 }
 
 // Offers
 
 .offers {
     margin-top: -27px;
+
+    @media (max-width: $tablet) {
+        position: relative;
+        margin-top: 0;
+    }
+}
+
+.offers__arrow {
+    top: 54%;
 }
 
 .offers__header {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: $tablet) {
+        margin-bottom: 20px;
+    }
 }
 
 .offers__inner {
@@ -853,7 +1147,7 @@ body {
     width: 570px;
     height: 239px;
     background-color: #fff;
-    z-index: 10001;
+    z-index: 1000;
     position: relative;
     cursor: pointer;
     transition: background .2s linear, color .2s linear;
@@ -890,7 +1184,11 @@ body {
     height: 207px;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 1003;
+
+    @media (max-width: $tablet) {
+        left: 105px;
+    }
 }
 
 .offers__description {
@@ -906,6 +1204,12 @@ body {
     background: url('../img/offers__bg.png') no-repeat center;
     text-align: right;
     transition: background .2s linear;
+
+    @media (max-width: $tablet) {
+        right: 105px;
+        z-index: 900;
+
+    }
 }
 
 .offers__description__content {
@@ -976,12 +1280,19 @@ body {
     background: url('../img/connection.svg') right bottom no-repeat;
     position: relative;
     min-height: 886px;
+
+    @media (max-width: $tablet) {
+        background: url('../img/footer__bg--tablet.svg') right bottom no-repeat;
+        min-height: 1019px;
+        margin-top: 70px;
+    }
 }
 
 .connection__bg {
     position: absolute;
     bottom: 250px;
     left: 50%;
+    z-index: 1;
 }
 
 .connection__inner {
@@ -995,6 +1306,11 @@ body {
 .connection__content {
     width: 455px;
     padding-top: 115px;
+
+    @media (max-width: $tablet) {
+        width: 381px;
+        padding-top: 170px;
+    }
 }
 
 .connection__header {
@@ -1002,6 +1318,11 @@ body {
     justify-content: flex-start;
     align-items: center;
     margin-bottom: -18px;
+
+    @media (max-width: $tablet) {
+        margin-top: -90px;
+        margin-bottom: 0;
+    }
 }
 
 .connection__header__line {
@@ -1010,6 +1331,10 @@ body {
 
 .connection__title {
     margin-bottom: 60px;
+
+    @media (max-width: $tablet) {
+        margin-bottom: 90px;
+    }
 }
 
 .connection__title__contur {
@@ -1024,6 +1349,12 @@ body {
     height: 836px;
     img {
         z-index: 1001;
+    }
+    @media (max-width: $tablet) {
+        width: 495.87px;
+        height: 1019px;
+        left: 420px;
+        top: 0px;
     }
 }
 
@@ -1066,6 +1397,10 @@ body {
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
+
+    @media (max-width: $tablet) {
+        margin-bottom: 55px;
+    }
 }
 
 .form__link {
@@ -1085,6 +1420,8 @@ body {
     left: 11px;
     right: 0;
     z-index: 1000;
+
+    
 }
 
 .footer__inner {
@@ -1099,6 +1436,10 @@ body {
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
+
+    @media (max-width: $tablet) {
+        margin-left: 250px;
+    }
 }
 
 // @font-face {

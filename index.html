@@ -47,7 +47,7 @@
 						ПЕРВАЯ ТРЕНИРОВКА <span class="contur--violet intro__info__large">бесплатно</span>
 					</div>
 					<button type="button" class="btn btn--intro">Записаться</button>
-					<div class="social">
+					<div class="intro__social social">
 						<a href="#" class="social__link">
 							<img src="./img/instagram.svg" alt="instagram" class="social__link__img">
 						</a>
@@ -60,7 +60,10 @@
 					</div>
 				</div>
 				<div class="intro__photo">
-					<img src="./img/woman.png" alt="woman">
+					<picture>
+							<source srcset="./img/woman--tablet.png" media="(max-width: 1024px)">
+							<img src="./img/woman.png" class="intro__woman" alt="woman">
+					</picture>
 				</div>
 			</div>
 		</div>
@@ -70,10 +73,12 @@
 		<div class="container">
 			<div class="about__inner">
 				<div class="about__info">
-					<div class="about__header">
-						<span class="number number--about">01</span>
+					<div class="about__wrapper">
+						<div class="about__header">
+							<span class="number number--about">01</span>
+						</div>
+						<h2 class="title title--about">О ТРЕНЕРЕ</h2>
 					</div>
-					<h2 class="title title--about">О ТРЕНЕРЕ</h2>
 					<div class="about__text">
 						<p class="about__text__section">
 							Функциональные, силовые, кардио, танцевальные тренировки, пограммы mind body, включая Pilates, Stretch. Подготовка к соревнованиям по бодибилдингу и фитнесу. Укрепление опорно-двигательного аппарата.
@@ -103,8 +108,9 @@
 				<span class="number number--tranings">02</span>
 				<h2 class="title title--tranings">ТРЕНИРОВКИ</h2>
 			</div>
+			<img src="./img/arrowYellow--prev.png" class="arrow__yellow tranings__arrow tranings__arrow--prev" alt="Left" id="traningsPrev">
+			<img src="./img/arrowYellow--next.png" class="arrow__yellow tranings__arrow tranings__arrow--next" alt="Right" id="traningsNext">
 			<div class="tranings__inner">
-
 				<div class="tranings__item" id="traningItem-1">
 					<div class="tranings__item__photo">
 						<img src="./img/streching.png" alt="стретчинг изображение">
@@ -116,10 +122,10 @@
 								— Индивидуальные занятия<br>
 							   — Программа тренировок
 							</p>
-							<div class="tranings__item__content__fotter">
-								<button type="button" class="btn btn--yellow2">Заказать звонок</button>
+							<div class="tranings__item__content__footer">
+								<button type="button" class="tranings__btn btn btn--yellow2">Записаться</button>
 								<div class="tranings__item__content__price">
-									Стоимость:<br>
+									Стоимость:<br class="br">
 									<span>7 500руб.</span>
 								</div>
 							</div>
@@ -142,10 +148,10 @@
 								— Индивидуальные занятия<br>
 							   — Программа тренировок
 							</p>
-							<div class="tranings__item__content__fotter">
-								<button type="button" class="btn btn--yellow2">Заказать звонок</button>
+							<div class="tranings__item__content__footer">
+								<button type="button" class="tranings__btn btn btn--yellow2">Заказать звонок</button>
 								<div class="tranings__item__content__price">
-									Стоимость:<br>
+									Стоимость:<br class="br">
 									<span>7 500руб.</span>
 								</div>
 							</div>
@@ -168,10 +174,10 @@
 								— Индивидуальные занятия<br>
 							   — Программа тренировок
 							</p>
-							<div class="tranings__item__content__fotter">
-								<button type="button" class="btn btn--yellow2">Заказать звонок</button>
+							<div class="tranings__item__content__footer">
+								<button type="button" class="tranings__btn btn btn--yellow2">Заказать звонок</button>
 								<div class="tranings__item__content__price">
-									Стоимость:<br>
+									Стоимость:<br class="br">
 									<span>7 500руб.</span>
 								</div>
 							</div>
@@ -194,10 +200,10 @@
 								— Индивидуальные занятия<br>
 							   — Программа тренировок
 							</p>
-							<div class="tranings__item__content__fotter">
-								<button type="button" class="btn btn--yellow2">Заказать звонок</button>
+							<div class="tranings__item__content__footer">
+								<button type="button" class="tranings__btn btn btn--yellow2">Заказать звонок</button>
 								<div class="tranings__item__content__price">
-									Стоимость:<br>
+									Стоимость:<br class="br">
 									<span>7 500руб.</span>
 								</div>
 							</div>
@@ -222,18 +228,27 @@
 						<span class="number number--reviews">03</span>
 						<h2 class="title title--reviews">ОТЗЫВЫ</h2>
 					</div>
-					<h2 class="reviews__title"><span class="contur reviews__title__contur">ТРЕНИРУЙСЯ</span><br> ВМЕСТЕ <span class="contur reviews__title__contur">С НАМИ</span></h2>
+					<h2 class="reviews__title"><span class="contur">ТРЕНИРУЙСЯ</span><br> ВМЕСТЕ <span class="contur reviews__title__contur">С НАМИ</span></h2>
 					<div class="reviews__footer">
 						<button class="reviews__btn btn btn--big"><span>БЕСПЛАТНАЯ ТРЕНИРОВКА</span> <img src="./img/arrow.svg" alt="->"></button>
 						<div class="social">
 							<a href="#" class="social__link">
-								<img src="./img/instagram.svg" alt="instagram" class="social__link__img">
+								<picture>
+									<source srcset="./img/instagram-yellow.svg" media="(max-width: 1024px)">
+										<img src="./img/instagram.svg" alt="instagram" class="social__link__img social__yellow--instagram">
+								</picture>
 							</a>
 							<a href="#" class="social__link">
-								<img src="./img/facebook.svg" alt="facebook" class="social__link__img">
+								<picture>
+									<source srcset="./img/facebook-yellow.svg" media="(max-width: 1024px)">
+										<img src="./img/facebook.svg" alt="facebook" class="social__link__img social__yellow--facebook">
+								</picture>
 							</a>
 							<a href="#" class="social__link">
-								<img src="./img/whatsapp.svg" alt="whatsapp" class="social__link__img">
+								<picture>
+									<source srcset="./img/whatsapp-yellow.svg" media="(max-width: 1024px)">
+										<img src="./img/whatsapp.svg" alt="whatsapp" class="social__link__img social__yellow--whatsapp">
+								</picture>
 							</a>
 						</div>
 
@@ -241,7 +256,7 @@
 				</div>
 					<div class="reviews__photo">
 						<img src="./img/arrowPrev.png" class="reviews__photo__arrow" alt="Left" id="sliderPrev">
-						<img src="./img/phone-black.png" alt="Phone">
+						<img src="./img/phone-black.png" class="reviews__photo__phone" alt="Phone">
 						<img src="./img/arrowNext.png" class="reviews__photo__arrow" alt="right" id="sliderNext">
 						<div class="reviews__phone__content" id="phoneSlider">
 							<div>
@@ -262,9 +277,11 @@
 
 	<section class="offers">
 		<div class="container">
+			<img src="./img/arrowYellow--prev.png" class="arrow__yellow offers__arrow tranings__arrow tranings__arrow--prev" alt="Left" id="offersPrev">
+			<img src="./img/arrowYellow--next.png" class="arrow__yellow offers__arrow tranings__arrow tranings__arrow--next" alt="Right" id="offersNext">
 			<div class="offers__header">
 				<span class="number number--offers">04</span>
-				<h2 class="title">СПЕЦПРЕДЛОЖЕНИЯ</h2>
+				<h2 class="title offers__title">СПЕЦПРЕДЛОЖЕНИЯ</h2>
 			</div>
 			<div class="offers__inner">
 
@@ -364,7 +381,10 @@
 					</form>
 				</div>
 				<div class="connection__photo">
-					<img src="./img/woman-2.png" alt="Woman">
+					<picture>
+						<source srcset="./img/woman-2--tablet.png" media="(max-width: 1024px)">
+							<img src="./img/woman-2.png" alt="Woman">
+				</picture>
 				</div>
 			</div>
 		</div>
