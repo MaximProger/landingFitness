@@ -26,6 +26,11 @@ footer, header, hgroup, menu, nav, section, main {
 	display: block;
 }
 
+
+b {
+    font-weight: bold;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -95,7 +100,8 @@ body {
     font-size: 16px;
     font-weight: 300;
 	min-width: 320px;
-	position: relative;
+    position: relative;
+    letter-spacing: normal;
 	line-height: 1.65;
 	font-family: 'Lato', sans-serif;
 	overflow-x: hidden;
@@ -122,6 +128,10 @@ body {
         max-width: 1842px;
         margin: 0 auto;
         padding: 0 22px;
+    }
+
+    &--tranings {
+        max-width: 1300px;
     }
 }
 
@@ -153,7 +163,7 @@ body {
         font-weight: 800;
         font-size: 15px;
         line-height: 18px;
-        letter-spacing: 0.15em;
+        letter-spacing: 0.09em;
         color: $violet;
         transition: background .2s linear;
 
@@ -169,6 +179,7 @@ body {
     &--intro {
         background: url('../img/btn__bg-violet.svg') center no-repeat;
         margin-bottom: 195px;
+        margin-left: -18px;
 
         &:hover {
             filter: saturate(130%)
@@ -194,8 +205,9 @@ body {
     }
 
     &--form {
-        background: url('../img/btn__bg-violet.svg') center no-repeat;
+        background: url('../img/btn-bg-form.svg') center no-repeat;
         // margin-bottom: 95px;
+        margin-left: -18px;
 
         &:hover {
             filter: saturate(130%)
@@ -206,13 +218,15 @@ body {
 
 .title {
     font-weight: 800;
+    font-style: normal;
     font-size: 64px;
     line-height: 77px;
     text-transform: uppercase;
     color: $violet;
 
     &--about {
-        margin-bottom: 40px;
+        margin-top: -20px;
+        margin-bottom: 46px;
     }
 
     &--reviews {
@@ -221,14 +235,24 @@ body {
 }
 
 .contur {
-    text-shadow: #fff 2px 2px 0, #fff -2px -2px 0,
-                 #fff -2px 2px 0, #fff 1px -2px 0;
+    // text-shadow: #fff 2px 2px 0, #fff -2px -2px 0,
+    //              #fff -2px 2px 0, #fff 1px -2px 0;
     // color: transparent;
+    color: transparent; /* прозрачный цвет букв */
+    -webkit-text-stroke: 2px #fff;
 
     &--violet {
-        text-shadow: $violet 2px 2px 0, $violet -2px -2px 0,
-                 $violet -2px 2px 0, $violet 2px -2px 0;
+        -webkit-text-stroke: 1px $violet;
     }
+}
+
+.slick-slide {
+    outline: none;
+    border-radius: 50%;
+}
+
+.slick-slide img {
+    border-radius: 5px;
 }
 
 // Header
@@ -405,6 +429,7 @@ body {
 
 .intro__subtitle {
     font-weight: 900;
+    letter-spacing: normal;
     font-size: 64px;
     line-height: 77px;
     text-transform: uppercase;
@@ -467,14 +492,15 @@ body {
 
 .about__info {
     width: 570px;
-    padding-top: 260px;
+    padding-top: 220px;
 }
 
 .about__header {
     display: flex;
     justify-content: left;
     align-items: center;
-    margin-bottom: 40px;
+    padding-top: 18px;
+    // margin-bottom: 40px;
 }
 
 .abot__header__line {
@@ -485,7 +511,15 @@ body {
     font-weight: 300;
     font-size: 16px;
     line-height: 26px;
-    margin-bottom: 57px;
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 85px;
+    }
+}
+
+.about__btn {
+    margin-left: 10px;
 }
 
 .about__photo {
@@ -511,14 +545,10 @@ body {
     bottom: 0;
     left: 15px;
     z-index: 1000;
-    width: 469px;
-    height: 544px;
 }
 
 .about__photo__second {
     position: absolute;
-    width: 865px;
-    height: 530px;
     top: 0;
     right: 0;
     z-index: -1;
@@ -526,14 +556,14 @@ body {
 
 // Tranings
 .tranings {
-    padding-top: 170px;
+    padding-top: 142px;
 }
 
 .tranings__header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 34px;
 }
 
 .tranings__line {
@@ -542,12 +572,13 @@ body {
 
 .tranings__inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    margin-left: 50px;
 }
 
 .tranings__item {
-    width: 24%;
+    width: 25%;
     cursor: pointer;
 }
 
@@ -622,9 +653,89 @@ body {
 
 .tranings__item__border {
     position: absolute;
-    left: 0;
+    left: 10px;
     bottom: 15px;
     z-index: -1;
+}
+
+.number {
+    position: relative;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 130px;
+    color: #fff;
+    text-shadow: #EAE151 2px 2px 0, #EAE151 -2px -2px 0,
+                #EAE151 -2px 2px 0, #EAE151 1px -2px 0;
+
+    &--about {
+        &:after {
+            content: "";
+            display: block;
+            width: 245px;
+            height: 2px;
+            background-color: #EAE151;
+            position: absolute;
+            top: 49%;
+            left: 99.25px;
+        }
+    }
+
+    &--tranings {
+        margin-right: 137px;
+        &:after {
+            content: "";
+            display: block;
+            width: 87px;
+            height: 2px;
+            background-color: #EAE151;
+            position: absolute;
+            top: 49%;
+            left: 99.25px;
+        }
+    }
+
+    &--reviews {
+        color: $violet;
+        margin-right: 137px;
+        &:after {
+            content: "";
+            display: block;
+            width: 87px;
+            height: 2px;
+            background-color: #EAE151;
+            position: absolute;
+            top: 49%;
+            left: 99.25px;
+        }
+    }
+
+    &--offers {
+        margin-right: 137px;
+        &:after {
+            content: "";
+            display: block;
+            width: 87px;
+            height: 2px;
+            background-color: #EAE151;
+            position: absolute;
+            top: 49%;
+            left: 99.25px;
+        }
+    }
+
+    &--connection {
+        &:after {
+            content: "";
+            display: block;
+            width: 245px;
+            height: 2px;
+            background-color: #EAE151;
+            position: absolute;
+            top: 49%;
+            left: 99.25px;
+        }
+    }
+
 }
 
 // Reviews
@@ -632,12 +743,14 @@ body {
     padding: 120px 0 110px 0;
     background: url('../img/bg_reviews.png') no-repeat center;
     position: relative;
+    z-index: 5;
 }
 
 .reviews__bg {
     position: absolute;
     bottom: 65px;
     left: 150px;
+    z-index: -1;
 }
 
 .reviews__inner {
@@ -649,14 +762,14 @@ body {
 
 .reviews__content {
     width: 60%;
-    padding-top: 120px;
+    padding-top: 90px;
 }
 
 .reviews__header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 65px;
+    margin-bottom: 37px;
 }
 
 .reviews__title {
@@ -665,16 +778,17 @@ body {
     line-height: 60px;
     text-transform: uppercase;
     color: #fff;
-    margin-bottom: 70px;
+    margin-bottom: 78px;
 
     span {
         font-family: 'Lato', sans-serif;
     }
 }
 
-.reviews__title__contur {
-    color: $violet; // !?
-}
+// .reviews__title__contur {
+//     // color: $violet; // !?
+    
+// }
 
 .reviews__footer {
     display: flex;
@@ -693,6 +807,11 @@ body {
     position: relative;
 }
 
+.reviews__photo__arrow {
+    cursor: pointer;
+    filter: drop-shadow(0 5px 5px rgba(0,0,0,.2));
+}
+
 .reviews__photo__phone {
     position: relative;
 }
@@ -707,6 +826,7 @@ body {
 // Offers
 
 .offers {
+    margin-top: -27px;
 }
 
 .offers__header {
@@ -726,7 +846,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-top: 60px;
+    margin-top: 37px;
     flex-wrap: wrap;
     max-width: 100%;
     max-height: 100%;
@@ -803,6 +923,7 @@ body {
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 35px;
+    text-align: left;
     transition: color .2s linear;
 
     &::after {
@@ -873,14 +994,14 @@ body {
 
 .connection__content {
     width: 455px;
-    padding-top: 160px;
+    padding-top: 115px;
 }
 
 .connection__header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: -18px;
 }
 
 .connection__header__line {
@@ -888,7 +1009,7 @@ body {
 }
 
 .connection__title {
-    margin-bottom: 63px;
+    margin-bottom: 60px;
 }
 
 .connection__title__contur {
@@ -907,6 +1028,9 @@ body {
 }
 
 // Form
+.form {
+    padding-left: 10px;
+}
 .form__input {
     display: block;
     border: none;
@@ -917,11 +1041,31 @@ body {
     margin-bottom: 30px;
     padding-bottom: 13px;
     padding-left: 1px;
-    font-family: inherit;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: capitalize;
+
+    &::placeholder {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: capitalize;
+    }
+
+    // &:last-child {
+    //     margin-bottom: 10px;
+    // }
 }
 
 .form__text {
-    margin-bottom: 50px;
+    margin-top: -5px;
+    margin-bottom: 65px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .form__link {
@@ -937,7 +1081,7 @@ body {
 // Footer
 .footer {
     position: absolute;
-    bottom: 22px;
+    bottom: 30px;
     left: 11px;
     right: 0;
     z-index: 1000;
@@ -952,6 +1096,9 @@ body {
 .footer__text {
     color: $violet;
     margin-left: 495px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 // @font-face {
