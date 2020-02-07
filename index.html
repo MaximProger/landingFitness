@@ -36,7 +36,11 @@
 	<section class="intro" id="intro">
 		<div class="container">
 			<div class="intro__inner">
-				<img src="./img/prof.svg" class="intro__img__pfroffesional" alt="Professional">
+				
+				<picture class="intro__img__pfroffesional">
+					<source srcset="./img/prof--mobile.svg" media="(max-width: 767px)">
+						<img src="./img/prof.svg" alt="Professional">
+			</picture>
 				<img src="./img/Fitness.svg" class="intro__img__fitness" alt="Fitness">
 				<div class="intro__about">
 					<div class="intro__header">
@@ -44,9 +48,9 @@
 						<h2 class="intro__subtitle contur">Ирина Петрова</h2>
 					</div>
 					<div class="intro__info">
-						ПЕРВАЯ ТРЕНИРОВКА <span class="contur--violet intro__info__large">бесплатно</span>
+						ПЕРВАЯ ТРЕНИРОВКА<span class="contur--violet intro__info__large">бесплатно</span>
 					</div>
-					<button type="button" class="btn btn--intro">Записаться</button>
+					<button type="button" class="intro__btn btn btn--intro">Записаться</button>
 					<div class="intro__social social">
 						<a href="#" class="social__link">
 							<img src="./img/instagram.svg" alt="instagram" class="social__link__img">
@@ -61,6 +65,7 @@
 				</div>
 				<div class="intro__photo">
 					<picture class="intro__woman">
+							<source srcset="./img/woman--mobile.png" media="(max-width: 767px)">
 							<source srcset="./img/woman--tablet.png" media="(max-width: 1199px)">
 							<img src="./img/woman.png" alt="woman">
 					</picture>
@@ -96,10 +101,12 @@
 		<div class="about__photo">
 			<div class="about__photo__wrapper">
 				<picture class="about__photo__second">
+						<source srcset="./img/about__bg-2--mobile.png" media="(max-width: 767px)">
 						<source srcset="./img/about__bg-2--tablet.png" media="(max-width: 1199px)">
 						<img src="./img/about__bg-2.png" alt="woman">
 				</picture>
 				<picture class="about__photo__first">
+					<source srcset="./img/about__bg-1--mobile.png" media="(max-width: 767px)">
 					<source srcset="./img/about__bg-1--tablet.png" media="(max-width: 1199px)">
 					<img src="./img/about__bg-1.png" alt="woman">
 				</picture>
@@ -154,7 +161,7 @@
 							   — Программа тренировок
 							</p>
 							<div class="tranings__item__content__footer">
-								<button type="button" class="tranings__btn btn btn--yellow2">Заказать звонок</button>
+								<button type="button" class="tranings__btn btn btn--yellow2">Записаться</button>
 								<div class="tranings__item__content__price">
 									Стоимость:<br class="br">
 									<span>7 500руб.</span>
@@ -180,7 +187,7 @@
 							   — Программа тренировок
 							</p>
 							<div class="tranings__item__content__footer">
-								<button type="button" class="tranings__btn btn btn--yellow2">Заказать звонок</button>
+								<button type="button" class="tranings__btn btn btn--yellow2">Записаться</button>
 								<div class="tranings__item__content__price">
 									Стоимость:<br class="br">
 									<span>7 500руб.</span>
@@ -206,7 +213,7 @@
 							   — Программа тренировок
 							</p>
 							<div class="tranings__item__content__footer">
-								<button type="button" class="tranings__btn btn btn--yellow2">Заказать звонок</button>
+								<button type="button" class="tranings__btn btn btn--yellow2">Записаться</button>
 								<div class="tranings__item__content__price">
 									Стоимость:<br class="br">
 									<span>7 500руб.</span>
@@ -284,6 +291,7 @@
 		<div class="container">
 			<img src="./img/arrowYellow--prev.png" class="arrow__yellow offers__arrow tranings__arrow tranings__arrow--prev" alt="Left" id="offersPrev">
 			<img src="./img/arrowYellow--next.png" class="arrow__yellow offers__arrow tranings__arrow tranings__arrow--next" alt="Right" id="offersNext">
+			<h4 class="offers__hidden__title">ЕЩЕ НЕ ГОТОВ К ЛЕТУ?</h4>
 			<div class="offers__header">
 				<span class="number number--offers">04</span>
 				<h2 class="title offers__title">СПЕЦПРЕДЛОЖЕНИЯ</h2>
@@ -368,6 +376,7 @@
 
 	<section class="connection">
 		<img src="./img/circle-big.svg" class="connection__bg" alt="Circle">
+		<img src="./img/connection__header__bg--mobile.svg" class="connection__header__bg" alt="Figure">
 		<div class="container">
 			<div class="connection__inner">
 				<div class="connection__content">
@@ -387,6 +396,7 @@
 				</div>
 				<div class="connection__photo">
 					<picture>
+						<source srcset="./img/woman-2--mobile.png" media="(max-width: 767px)">
 						<source srcset="./img/woman-2--tablet.png" media="(max-width: 1024px)">
 							<img src="./img/woman-2.png" alt="Woman">
 				</picture>
@@ -445,7 +455,9 @@
 						<div class="nav__number__item" id="05">05</div>
 					</div>
 				</div>
-				<button type="button" class="nav__btn btn btn--yellow">Заказать звонок</button>
+				<div class="nav__btn__wrapper">
+					<button type="button" class="nav__btn btn btn--yellow">Заказать звонок</button>
+				</div>
 			</div>
 		</div>
 </nav>
