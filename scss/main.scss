@@ -205,8 +205,6 @@ body {
 
     &--yellow {
         background: url('../img/btn-yellow.svg') center no-repeat;
-        margin-bottom: 225px;
-        margin-top: 148px;
 
         &:hover {
             filter: saturate(130%)
@@ -293,6 +291,7 @@ body {
     outline: none;
     display: none;
     z-index: 1000;
+    user-select: none;
 
     @media (max-width: $tablet) {
         display: block;
@@ -365,6 +364,16 @@ body {
     align-items: center;
     padding-top: 28px;
     // position: absolute;
+
+    @media (max-width: $tablet) {
+        text-align: center;
+        margin: 0 auto;
+
+    }
+}
+
+.nav__phone {
+    color: #fff;
 }
 
 .nav__inner {
@@ -372,6 +381,10 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-top: 140px;
+}
+
+.nav__list {
+    width: 100%;
 }
 
 .nav__burger {
@@ -402,6 +415,37 @@ body {
         color: $violet;
         text-shadow: #fff 1px 1px 0, #fff -1px -1px 0,
                  #fff -1px 1px 0, #fff 1px -1px 0;
+        
+        @media (max-width: $tablet) {
+            font-weight: 800;
+            font-size: 44px;
+            line-height: 53px;
+            color: #fff;
+            text-shadow: none;
+            user-select: none;
+
+            
+
+        }
+    }
+
+    @media (max-width: $tablet) {
+        font-weight: 800;
+        font-size: 44px;
+        line-height: 53px;
+        color: #fff;
+
+        &:hover {
+            border-bottom: 1px solid #EAE151;
+        }
+
+    }
+}
+
+.nav__number {
+    @media (max-width: $tablet) {
+        display: none;
+
     }
 }
 
@@ -417,6 +461,27 @@ body {
 
     &.active {
         display: block;
+    }
+
+    @media (max-width: $tablet) {
+        display: inline;
+        font-weight: 900;
+        font-size: 54px;
+        line-height: 65px;
+        // text-shadow: rgba(234, 225, 81, 0.5) 2px 2px 0, rgba(234, 225, 81, 0.5) -2px -2px 0,
+        // rgba(234, 225, 81, 0.5) -2px 2px 0, rgba(234, 225, 81, 0.5) 2px -2px 0;
+
+    }
+
+}
+
+.nav__btn {
+    margin-bottom: 225px;
+    margin-top: 148px;
+
+    @media (max-width: $tablet) {
+        margin-left: 210px;
+
     }
 
 }
@@ -473,8 +538,8 @@ body {
     @media (max-width: $tablet) {
         width: 824px;
         height: 252px;
-        bottom: 22%;
-        right: 13%;
+        bottom: 23%;
+        right: 2%;
     }
 }
 
@@ -598,11 +663,12 @@ body {
     @media (max-width: $tablet) {
         display: flex;
         justify-content: center;
-        align-items: flex-end;
+        align-items: flex-start;
         position: absolute;
-        left: 141px;
+        left: 38px;
         top: 90px;
         width: 780px;
+        
     }
 }
 
@@ -624,6 +690,7 @@ body {
 
     @media (max-width: $tablet) {
         padding-top: 0;
+        
     }
 }
 
@@ -690,11 +757,12 @@ body {
     z-index: 1000;
 
     @media (max-width: $tablet) {
-        width: 373.2px;
-        height: 432.88px;
+        // width: 373.2px;
+        // height: 432.88px;
         position: relative;
         margin-top: 238px;
-        left: 0;
+        left: 36px;
+        top: 235px;
     }
 }
 
@@ -705,8 +773,8 @@ body {
     z-index: -1;
 
     @media (max-width: $tablet) {
-        width: 688.3px;
-        height: 421.74px;
+        // width: 688.3px;
+        // height: 421.74px;
         top: 80px;
     }
 }
@@ -786,6 +854,10 @@ body {
 
 .tranings__item__photo {
     position: relative;
+
+    @media (max-width: $tablet) {
+        margin-left: 30px;
+    }
 }
 
 .tranings__item__content {
@@ -806,7 +878,7 @@ body {
     @media (max-width: $tablet) {
         display: block;
         background: none;
-        left: 180px;
+        left: 225px;
         // width: 257px;
     }
 }
@@ -1073,11 +1145,34 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative;
+
+    @media (max-width: $tablet) {
+        margin-right: 40px;
+    }
 }
 
 .reviews__photo__arrow {
+
     cursor: pointer;
     filter: drop-shadow(0 5px 5px rgba(0,0,0,.2));
+
+    @media (max-width: $tablet) {
+        position: absolute;
+        z-index: 1000;
+        top: 260px;
+    }
+
+    &--prev {
+        @media (max-width: $tablet) {
+            left: -40px;
+        }
+    }
+
+    &--next {
+        @media (max-width: $tablet) {
+            right: -40px;
+        }
+    }
 }
 
 .reviews__photo__phone {
@@ -1098,7 +1193,7 @@ body {
         height: 484.63px;
         width: 223.96px;
         bottom: 41px;
-        left: 95px;
+        left: 43px;
     }
 
 
@@ -1293,6 +1388,10 @@ body {
     bottom: 250px;
     left: 50%;
     z-index: 1;
+
+    @media (max-width: $tablet) {
+        z-index: -1;
+    }
 }
 
 .connection__inner {

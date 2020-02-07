@@ -124,7 +124,7 @@ $('.tranings__item').on("mouseout", function() {
 
 // установим обработчик события resize
 $(window).resize(function(){
-    if ($(window).width() <= '1024'){
+    if ($(window).width() <= '1199'){
         // Intro
         // $('.intro__woman').attr("src","./img/woman--tablet.png");
         // $('.intro__img__fitness').attr("src","./img/Fitness--tablet.svg");
@@ -132,7 +132,7 @@ $(window).resize(function(){
         // Tranings
         $('.tranings__inner').addClass('tranings__slider');
         $('.tranings__item__border').removeAttr('id');
-        $('.tranings__slider').slick({
+        $('.tranings__slider').not('.slick-initialized').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             // arrows: false,
@@ -143,9 +143,8 @@ $(window).resize(function(){
 
         // Offers
         $('.offers__title').text('Акции');
-        $('.tranings__inner').addClass('tranings__slider');
-        $('.tranings__item__border').removeAttr('id');
-        $('.offers__inner').slick({
+        $('.offers__inner').addClass('offers__slider');
+        $('.offers__slider').not('.slick-initialized').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             // arrows: false,

@@ -60,9 +60,9 @@
 					</div>
 				</div>
 				<div class="intro__photo">
-					<picture>
-							<source srcset="./img/woman--tablet.png" media="(max-width: 1024px)">
-							<img src="./img/woman.png" class="intro__woman" alt="woman">
+					<picture class="intro__woman">
+							<source srcset="./img/woman--tablet.png" media="(max-width: 1199px)">
+							<img src="./img/woman.png" alt="woman">
 					</picture>
 				</div>
 			</div>
@@ -95,9 +95,14 @@
 		</div>
 		<div class="about__photo">
 			<div class="about__photo__wrapper">
-				<img src="./img/about__bg-2.png" class="about__photo__second" alt="about__bg">
-				<img src="./img/about__bg-1.png" class="about__photo__first" alt="about__bg">
-				
+				<picture class="about__photo__second">
+						<source srcset="./img/about__bg-2--tablet.png" media="(max-width: 1199px)">
+						<img src="./img/about__bg-2.png" alt="woman">
+				</picture>
+				<picture class="about__photo__first">
+					<source srcset="./img/about__bg-1--tablet.png" media="(max-width: 1199px)">
+					<img src="./img/about__bg-1.png" alt="woman">
+				</picture>
 			</div>
 		</div>
 	</section>
@@ -255,18 +260,18 @@
 					</div>
 				</div>
 					<div class="reviews__photo">
-						<img src="./img/arrowPrev.png" class="reviews__photo__arrow" alt="Left" id="sliderPrev">
+						<img src="./img/arrowPrev.png" class="reviews__photo__arrow reviews__photo__arrow--prev" alt="Left" id="sliderPrev">
 						<img src="./img/phone-black.png" class="reviews__photo__phone" alt="Phone">
-						<img src="./img/arrowNext.png" class="reviews__photo__arrow" alt="right" id="sliderNext">
+						<img src="./img/arrowNext.png" class="reviews__photo__arrow reviews__photo__arrow--next" alt="right" id="sliderNext">
 						<div class="reviews__phone__content" id="phoneSlider">
 							<div>
-								<img src="./img/phone-content.png" alt="">
+								<img src="./img/phone-content.png" alt="photo">
 							</div>
 							<div>
-								<img src="./img/phone-content.png" alt="">
+								<img src="./img/phone-content.png" alt="photo">
 							</div>
 							<div>
-								<img src="./img/phone-content.png" alt="">
+								<img src="./img/phone-content.png" alt="photo">
 							</div>
 						</div>
 					</div>
@@ -418,17 +423,18 @@
 				<div class="nav__header__inner">
 					<!-- <img src="./img/burger.png" class="nav__burger active" id="burgerOpen" alt="Burger menu"> -->
 					<img src="./img/close.svg" class="nav__burger" id="burgerClose" alt="Burger menu">
-					<div class="header__phone">8 (985) <span class="header__phone__large">777 34 56</span></div>
+					<div class="nav__phone header__phone">8 (985) <span class="header__phone__large">777 34 56</span></div>
 				</div>
 			</div>
 			<div class="container">
 				<div class="nav__inner">
 					<div class="nav__list">
-						<a href="#" class="nav__link" id="link__03" data-mouse="#03">АКЦИИ</a>
-						<a href="#" class="nav__link" id="link__02" data-mouse="#02">ОТЗЫВЫ</a>
-						<a href="#" class="nav__link  active" id="link__01" data-mouse="#01">ГЛАВНАЯ</a>
-						<a href="#" class="nav__link" id="link__04" data-mouse="#04">О ТРЕНЕРЕ</a>
-						<a href="#" class="nav__link" id="link__05" data-mouse="#05">ТРЕНИРОВКИ</a>
+						<a href="#" class="nav__link  active" id="link__01" data-mouse="#01"><span class="nav__number__item nav__number__item--sm">01</span> ГЛАВНАЯ</a>
+						<a href="#" class="nav__link" id="link__02" data-mouse="#02"><span class="nav__number__item nav__number__item--sm">02</span> О ТРЕНЕРЕ</a>
+						<a href="#" class="nav__link" id="link__03" data-mouse="#03"><span class="nav__number__item nav__number__item--sm">03</span> ТРЕНИРОВКИ</a>
+						<a href="#" class="nav__link" id="link__04" data-mouse="#04"><span class="nav__number__item nav__number__item--sm">04</span> ОТЗЫВЫ</a>
+						<a href="#" class="nav__link" id="link__05" data-mouse="#05"><span class="nav__number__item nav__number__item--sm">05</span> АКЦИИ</a>
+						
 					</div>
 	
 					<div class="nav__number">
@@ -439,7 +445,7 @@
 						<div class="nav__number__item" id="05">05</div>
 					</div>
 				</div>
-				<button type="button" class="btn btn--yellow">Заказать звонок</button>
+				<button type="button" class="nav__btn btn btn--yellow">Заказать звонок</button>
 			</div>
 		</div>
 </nav>
