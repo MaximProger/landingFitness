@@ -1891,6 +1891,7 @@ body {
         background: url('../img/footer__bg--mobile.svg') right bottom no-repeat;
         min-height: 671px;
         margin-top: 150px;
+        overflow: hidden;
     }
 }
 
@@ -2000,7 +2001,7 @@ body {
         height: 381px;
         left: auto;
         top: 295px;
-        right: -15px;
+        right: -20px;
     }
 }
 
@@ -2097,6 +2098,7 @@ body {
         font-size: 12px;
         line-height: 17px;
         margin-bottom: 45px;
+        max-width: 260px;
     }
 }
 
