@@ -50,6 +50,8 @@ $('#phoneSlider').slick({
     prevArrow: $('#sliderPrev')
   });
 
+  // White arrows
+
   $('#sliderPrev').on("mouseover", function() {
     $(this).attr("src","./img/arrowActivePrev.png");
 
@@ -69,6 +71,8 @@ $('#phoneSlider').slick({
         $(this).attr("src","./img/arrowNext.png");
 
         })
+
+    // Yello arrows
 
     $('.arrow__yellow--next').on("mouseover", function() {
         $(this).attr("src","./img/arrowActiveNext.png");
@@ -152,6 +156,10 @@ $(window).resize(function(){
             nextArrow: $('#offersNext'),
             prevArrow: $('#offersPrev')
           });
+    }
+   if ($(window).width() <= '767'){
+        $('#inputEmail').attr("placeholder", "Ваше имя*");
+        $('#inputMessage').attr("placeholder", "Телефон*");
     }
   });
    

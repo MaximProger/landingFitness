@@ -64,6 +64,7 @@
 					</div>
 				</div>
 				<div class="intro__photo">
+					<img src="./img/circle.svg" class="intro__bg__circle" alt="circle">
 					<picture class="intro__woman">
 							<source srcset="./img/woman--mobile.png" media="(max-width: 767px)">
 							<source srcset="./img/woman--tablet.png" media="(max-width: 1199px)">
@@ -120,8 +121,8 @@
 				<span class="number number--tranings">02</span>
 				<h2 class="title title--tranings">ТРЕНИРОВКИ</h2>
 			</div>
-			<img src="./img/arrowYellow--prev.png" class="arrow__yellow tranings__arrow tranings__arrow--prev" alt="Left" id="traningsPrev">
-			<img src="./img/arrowYellow--next.png" class="arrow__yellow tranings__arrow tranings__arrow--next" alt="Right" id="traningsNext">
+			<img src="./img/arrowYellow--prev.png" class="arrow__yellow arrow__yellow--prev  tranings__arrow tranings__arrow--prev" alt="Left" id="traningsPrev">
+			<img src="./img/arrowYellow--next.png" class="arrow__yellow arrow__yellow--next tranings__arrow tranings__arrow--next" alt="Right" id="traningsNext">
 			<div class="tranings__inner">
 				<div class="tranings__item" id="traningItem-1">
 					<div class="tranings__item__photo">
@@ -289,8 +290,8 @@
 
 	<section class="offers">
 		<div class="container">
-			<img src="./img/arrowYellow--prev.png" class="arrow__yellow offers__arrow tranings__arrow tranings__arrow--prev" alt="Left" id="offersPrev">
-			<img src="./img/arrowYellow--next.png" class="arrow__yellow offers__arrow tranings__arrow tranings__arrow--next" alt="Right" id="offersNext">
+			<img src="./img/arrowYellow--prev.png" class="arrow__yellow arrow__yellow--prev offers__arrow tranings__arrow tranings__arrow--prev" alt="Left" id="offersPrev">
+			<img src="./img/arrowYellow--next.png" class="arrow__yellow arrow__yellow--next offers__arrow tranings__arrow tranings__arrow--next" alt="Right" id="offersNext">
 			<h4 class="offers__hidden__title">ЕЩЕ НЕ ГОТОВ К ЛЕТУ?</h4>
 			<div class="offers__header">
 				<span class="number number--offers">04</span>
@@ -385,8 +386,10 @@
 					</div>
 					<h2 class="connection__title title">ПОРАБОТАЕМ <span class="connection__title__contur contur--violet">ВМЕСТЕ?</span></h2>
 					<form class="form">
-						<input class="form__input" type="email" placeholder="Email" required>
-						<input class="form__input" type="text" placeholder="Сообщение" required>
+						<img src="./img/form__icon-1.svg" class="form__imput__img form__imput__img--1" alt="Persone">
+						<img src="./img/form__icon-2.svg" class="form__imput__img form__imput__img--2" alt="Phone">
+						<input class="form__input" id="inputEmail" type="email" placeholder="Email" required>
+						<input class="form__input" id="inputMessage" type="text" placeholder="Сообщение" required>
 						<p class="form__text">
 							Нажимая кнопку “Отправить”, Вы соглашаетесь
 							с условиями обработки <a href="#" class="form__link">персональных данных</a>
@@ -408,7 +411,7 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="footer__inner">
-				<div class="social">
+				<div class="social footer__social">
 					<a href="#" class="social__link">
 						<img src="./img/instagram.svg" alt="instagram" class="social__link__img">
 					</a>
