@@ -139,7 +139,6 @@ $(window).resize(function(){
         $('.tranings__slider').not('.slick-initialized').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
-            // arrows: false,
             autoplaySpeed: 2000,
             nextArrow: $('#traningsNext'),
             prevArrow: $('#traningsPrev')
@@ -151,7 +150,6 @@ $(window).resize(function(){
         $('.offers__slider').not('.slick-initialized').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
-            // arrows: false,
             autoplaySpeed: 2000,
             nextArrow: $('#offersNext'),
             prevArrow: $('#offersPrev')
