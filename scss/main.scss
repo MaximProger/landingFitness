@@ -1034,7 +1034,12 @@ body {
   right: 0;
   top: 125px;
 
+  @media (max-width: 1024px) {
+    right: 435px;
+  }
+
   @media (max-width: $mobile) {
+    right: 0;
     width: 100%;
     top: -409px;
   }
@@ -1129,6 +1134,8 @@ body {
 
   @media (max-width: $mobile) {
     margin-left: 20px;
+    flex-wrap: wrap;
+    text-align: center;
   }
 }
 
@@ -1158,8 +1165,11 @@ body {
 
   @media (max-width: $mobile) {
     height: 600px;
-    min-width: 310px;
+    // min-width: 310px;
+    max-width: 100%;
+    width: 100%;
   }
+
 
   @media (max-width: 360px) {
     height: 700px;
@@ -1225,6 +1235,14 @@ body {
   }
 }
 
+// .tranings__item__photo__woman {
+//   @media (max-width: $mobile) {
+//     position: absolute;
+//     z-index: 800;
+//     left: 0;
+//   }
+// }
+
 .tranings__item__content {
   display: none;
   position: absolute;
@@ -1278,9 +1296,16 @@ body {
   text-align: left;
   margin-left: 100px;
 
+  @media (max-width: $mobile) {
+    text-align: center;
+    margin-left: 0;
+  }
+
   @media (max-width: $mobile-sm) {
     margin-left: 30px;
+    text-align: left;
   }
+  
 }
 
 .tranings__item__content__footer {
@@ -1366,6 +1391,15 @@ body {
   left: 10px;
   bottom: 15px;
   z-index: -1;
+
+  // @media (max-width: $mobile) {
+  //   left: 30%;
+  //   text-align: center;
+  // }
+
+  // @media (max-width: 400px) {
+  //   left: 15%;
+  // }
 }
 
 .number {
@@ -1526,7 +1560,7 @@ body {
 
   @media (max-width: $tablet) {
     background: url("../img/reviews__bg--tablet.svg") no-repeat center;
-    padding-top: 190px;
+    padding-top: 170px;
   }
 
   @media (max-width: $mobile) {
@@ -1585,7 +1619,7 @@ body {
 
   @media (max-width: $tablet) {
     position: absolute;
-    top: -95px;
+    top: -78px;
     left: 182px;
   }
 
@@ -1614,7 +1648,12 @@ body {
   }
 
   @media (max-width: $tablet) {
+    margin-top: 100px;
     margin-bottom: 50px;
+  }
+
+  @media (max-width: 1023px) {
+    // margin-bottom: 150px;
   }
 
   @media (max-width: $mobile) {
@@ -1666,7 +1705,8 @@ body {
   position: relative;
 
   @media (max-width: $tablet) {
-    margin-right: 40px;
+    // margin-right: 40px;
+    margin-left: 40px;
     height: 565.85px;
     width: 100%;
 
@@ -1690,26 +1730,38 @@ body {
   @media (max-width: $tablet) {
     position: absolute;
     z-index: 1000;
-    top: 260px;
+    top: 270px;
   }
 
   &--prev {
     @media (max-width: $tablet) {
-      left: -40px;
+      left: 40px;
     }
 
     @media (max-width: $mobile) {
       left: 0px;
     }
+
+    @media (max-width: $mobile-sm) {
+      left: -30px;
+    }
+
+    @media (max-width: 320px) {
+      left: -13px;
+    }
   }
 
   &--next {
     @media (max-width: $tablet) {
-      right: -40px;
+      right: 0px;
     }
 
     @media (max-width: $mobile) {
       right: 0px;
+    }
+
+    @media (max-width: 320px) {
+      right: -13px;
     }
   }
   @media (max-width: $mobile) {
@@ -1726,6 +1778,12 @@ body {
     left: 77px;
   }
 
+  @media (max-width: $mobile) {
+    height: 375.34px;
+    width: 204.34px;
+    left: 35%;
+  }
+
   @media (max-width: 550px) {
     left: 150px;
   }
@@ -1734,11 +1792,10 @@ body {
     left: 100px;
   }
 
-  @media (max-width: $mobile) {
-    height: 375.34px;
-    width: 204.34px;
-    left: 72px;
+  @media (max-width: $mobile-sm) {
+    left: 25px;
   }
+
 }
 
 .reviews__phone__content {
@@ -1755,6 +1812,17 @@ body {
     // left: 43px;
   }
 
+  @media (max-width: $mobile) {
+    height: 320.68px;
+    width: 148.2px;
+    bottom: 28px;
+    left: 39%;
+  }
+
+  @media (max-width: 680px) {
+    left: 40%;
+  }
+
   @media (max-width: 550px) {
     left: 178px;
   }
@@ -1763,16 +1831,15 @@ body {
     left: 128px;
   }
 
-  @media (max-width: $mobile) {
-    height: 320.68px;
-    width: 148.2px;
-    bottom: 28px;
-    left: 100px;
-  }
+  
 
   @media (max-width: $mobile-sm) {
-    // left: 28%;
+    left: 53px;
   }
+
+  // @media (max-width: $mobile-ssm) {
+  //   left: 78px;
+  // }
 }
 
 // Offers
@@ -1807,11 +1874,24 @@ body {
   color: $violet;
   font-family: "LatoBold";
   position: absolute;
-  left: 87px;
+  left: 40%;
   top: 425px;
 
   @media (max-width: $mobile) {
     display: block;
+  }
+
+  @media (max-width: 450px) {
+    left: 30%;
+  }
+
+  @media (max-width: $mobile-sm) {
+    left: 87px;
+  }
+
+  @media (max-width: $mobile-ssm) {
+    left: 70px;
+    font-size: 14;
   }
 }
 
