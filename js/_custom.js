@@ -2,14 +2,14 @@
 $('#burgerOpen').on('click', function() {
     $(this).removeClass('active');
     $('#burgerClose').addClass('active');
-    $('#nav').show(400);
+    $('#nav').show(100);
     $('body').addClass('active');
 })
 
 $('#burgerClose').on('click', function() {
     $(this).removeClass('active');
     $('#burgerOpen').addClass('active');
-    $('#nav').hide(400);
+    $('#nav').hide(100);
     $('body').removeClass('active');
 })
 
@@ -141,7 +141,7 @@ $(window).resize(function(){
             slidesToScroll: 1,
             autoplaySpeed: 2000,
             nextArrow: $('#traningsNext'),
-            prevArrow: $('#traningsPrev')
+            prevArrow: $('#traningsPrev'),
           });
 
         // Offers
