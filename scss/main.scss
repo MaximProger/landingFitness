@@ -578,9 +578,9 @@ body {
       line-height: 36px;
     }
 
-    @media (max-width: $mobile-sm) {
-      font-size: 25px;
-    }
+    // @media (max-width: $mobile-sm) {
+    //   font-size: 25px;
+    // }
   }
 
   @media (max-width: $tablet) {
@@ -597,9 +597,9 @@ body {
     line-height: 36px;
   }
 
-  @media (max-width: $mobile-sm) {
-    font-size: 25px;
-  }
+  // @media (max-width: $mobile-sm) {
+  //   font-size: 25px;
+  // }
 }
 
 .nav__number {
@@ -653,6 +653,10 @@ body {
     margin-left: 20px;
     margin-right: 30px;
     opacity: .5;
+  }
+
+  @media (max-width: $mobile-ssm) {
+    margin: 0;
   }
 }
 
@@ -1108,14 +1112,14 @@ body {
 
   @media (max-width: $mobile) {
     left: auto;
-    right: -150px;
+    right: 0px;
     top: 158px;
   }
 
-  @media (max-width: $mobile-sm) {
-    left: 0px;
-    top: 158px;
-  }
+  // @media (max-width: $mobile-sm) {
+  //   left: 0px;
+  //   top: 158px;
+  // }
 }
 
 .about__photo__second {
@@ -1139,9 +1143,9 @@ body {
     padding-top: 61px;
   }
 
-  @media (max-width: 360px) {
-    margin-bottom: -750px;
-  }
+  // @media (max-width: 360px) {
+  //   margin-bottom: -750px;
+  // }
 }
 
 .tranings__header {
@@ -1149,6 +1153,10 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 34px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 0;
+  }
 }
 
 .tranings__line {
@@ -1181,9 +1189,10 @@ body {
     right: 20px;
   }
 
-  @media (max-width: 360px) {
-    top: 27%;
+  @media (max-width: $mobile) {
+    top: 58%;
   }
+
 }
 
 .tranings__item {
@@ -1194,18 +1203,18 @@ body {
   }
 
   @media (max-width: $mobile) {
-    height: 600px;
+    height: 630px;
     // min-width: 310px;
     max-width: 100%;
     width: 100%;
   }
 
 
-  @media (max-width: 360px) {
-    height: 700px;
-    min-width: 310px;
-    margin-left: -10px;
-  }
+  // @media (max-width: 360px) {
+  //   height: 700px;
+  //   min-width: 310px;
+  //   margin-left: -10px;
+  // }
 }
 
 .tranings__item__title {
@@ -1231,7 +1240,7 @@ body {
   }
 
   @media (max-width: $mobile) {
-    margin-top: 30px;
+    margin-top: 45px;
     font-size: 18px;
     line-height: 22px;
   }
@@ -1248,22 +1257,16 @@ body {
     margin-left: 30px;
   }
 
-  img {
-    
-    @media (max-width: $mobile) {
-      margin-left: 10px;
-      margin-top: -10px;
-    }
-
-    @media (max-width: 360px) {
-      margin: 0;
-    }
-  }
-
-  @media (max-width: 360px) {
-    margin: 0;
+  @media (max-width: $mobile) {
+    min-height: 330px;
+    // margin: 0;
     width: 100%;
+    // margin-left: 0;
   }
+
+  // @media (max-width: $mobile-ssm) {
+  //   margin-left: 0;
+  // }
 }
 
 .tranings__item__photo__woman {
@@ -1273,6 +1276,15 @@ body {
       @media (max-width: $tablet) {
         margin-left: -30px;
       }
+  }
+
+  @media (max-width: $mobile) {
+    bottom: 0;
+    position: absolute;
+  }  
+
+  @media (max-width: $mobile-ssm) {
+    // left: 30px;
   }
 }
 
@@ -1310,7 +1322,7 @@ body {
 
   @media (max-width: $mobile) {
     left: -30px;
-    top: 400px;
+    top: 420px;
     width: 100%;
   }
 }
@@ -1345,14 +1357,14 @@ body {
   }
 
   @media (max-width: $mobile) {
-    text-align: center;
-    margin-left: 0;
+    text-align: left;
+    margin-left: 40px;
   }
 
-  @media (max-width: $mobile-sm) {
-    margin-left: 30px;
-    text-align: left;
-  } 
+  // @media (max-width: $mobile-sm) {
+  //   margin-left: 30px;
+  //   text-align: left;
+  // } 
 
 
 }
@@ -1398,11 +1410,7 @@ body {
     margin-right: 0;
     text-align: right;
     align-items: flex-start;
-  }
-
-  @media (max-width: 360px) {
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 
@@ -1435,6 +1443,10 @@ body {
       font-size: 18px;
       line-height: 22px;
     }
+
+    @media (max-width: $mobile-ssm) {
+      font-size: 13px;
+    }
   }
 
   @media (max-width: $tablet) {
@@ -1452,13 +1464,24 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    text-align: right;
+    margin-left: 10px;
   }
 
-  @media (max-width: 360px) {
-    justify-content: center;
-    text-align: center;
-    margin-top: 10px;
+  @media (max-width: $mobile-sm) {
+    text-align: left;
   }
+
+  @media (max-width: $mobile-ssm) {
+    font-size: 13px;
+    margin-left: 0;
+  }
+
+  // @media (max-width: 360px) {
+  //   justify-content: center;
+  //   text-align: center;
+  //   margin-top: 10px;
+  // }
 }
 
 .tranings__item__border {
@@ -1692,6 +1715,7 @@ body {
 
   @media (max-width: $mobile) {
     width: 100%;
+    margin-top: 53px;
   }
 }
 
@@ -1709,13 +1733,14 @@ body {
 
   @media (max-width: $mobile) {
     top: 20px;
-    left: 150px;
+    left: 50%;
+    margin-left: -110px;
   }
 
-  @media (max-width: $mobile-sm) {
-    top: 20px;
-    left: 78px;
-  }
+  // @media (max-width: $mobile-sm) {
+  //   top: 20px;
+  //   left: 78px;
+  // }
 }
 
 .reviews__title {
@@ -1734,10 +1759,6 @@ body {
   @media (max-width: $tablet) {
     margin-top: 100px;
     margin-bottom: 50px;
-  }
-
-  @media (max-width: 1023px) {
-    // margin-bottom: 150px;
   }
 
   @media (max-width: $mobile) {
@@ -1783,147 +1804,155 @@ body {
   }
 }
 
-.reviews__photo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.reviews__phone__wrapper {
   position: relative;
+  width: 380px;
+  height: 696px;
 
   @media (max-width: $tablet) {
-    // margin-right: 40px;
-    margin-left: 40px;
-    height: 565.85px;
-    width: 100%;
-
-    .slick-list {
-      border-radius: 2%;
-    }
+    height: 566px;
+    width: 309px;
   }
+
   @media (max-width: $mobile) {
-    width: 100%;
-    margin-right: 0;
-    justify-content: center;
-    margin-top: 60px;
     height: 375.34px;
+    width: 100%;
   }
 }
 
+.reviews__photo {
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 25px;
+  bottom: 0px;
+
+  @media (max-width: $mobile) {
+    margin-top: 55px;
+    position: static;
+    text-align: center;
+
+  }
+
+  // @media (max-width: $tablet) {
+  //   display: block;
+  //   margin-right: 40px;
+  //   text-align: center;
+  //   margin-left: 40px;
+  //   height: 565.85px;
+  //   width: 100%;
+
+  //   .slick-list {
+  //     border-radius: 2%;
+  //   }
+  // }
+  // @media (max-width: $mobile) {
+  //   width: 100%;
+  //   margin-right: 0;
+  //   justify-content: center;
+  //   margin-top: 60px;
+  //   height: 375px;
+  // }
+}
+
 .reviews__photo__arrow {
+  position: absolute;
+  top: 46%;
   cursor: pointer;
   filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
 
-  @media (max-width: $tablet) {
-    position: absolute;
-    z-index: 1000;
-    top: 270px;
-  }
+  // @media (max-width: $tablet) {
+  //   position: absolute;
+  //   z-index: 1000;
+  //   top: 270px;
+  // }
 
   &--prev {
-    @media (max-width: $tablet) {
-      left: 40px;
-    }
-
+    left: -50px;
     @media (max-width: $mobile) {
-      left: 0px;
+      left: 0;
     }
 
-    @media (max-width: $mobile-sm) {
-      left: -30px;
-    }
-
-    @media (max-width: 320px) {
-      left: -13px;
-    }
   }
 
   &--next {
-    @media (max-width: $tablet) {
-      right: 0px;
-    }
-
+    right: -32px;
     @media (max-width: $mobile) {
-      right: 0px;
-    }
-
-    @media (max-width: 320px) {
-      right: -13px;
+      right: 0;
     }
   }
   @media (max-width: $mobile) {
-    top: 160px;
+    top: 57%;
   }
 }
 
 .reviews__photo__phone {
-  position: relative;
+  // position: relative;
+  width: 380px;
+  height: 696px;
+
   @media (max-width: $tablet) {
-    position: absolute;
-    height: 565.85px;
-    width: 308.94px;
-    left: 77px;
+    height: 566px;
+    width: 309px;
   }
 
   @media (max-width: $mobile) {
     height: 375.34px;
     width: 204.34px;
-    left: 35%;
   }
 
-  @media (max-width: 550px) {
-    left: 150px;
-  }
+  // @media (max-width: $tablet) {
+  //   // position: absolute;
+  //   height: 566px;
+  //   width: 309px;
+  //   left: 77px;
+  // }
 
-  @media (max-width: 420px) {
-    left: 100px;
-  }
-
-  @media (max-width: $mobile-sm) {
-    left: 25px;
-  }
-
+  // @media (max-width: $mobile) {
+  //   height: 375.34px;
+  //   width: 204.34px;
+  //   left: 35%;
+  // }
 }
 
 .reviews__phone__content {
   position: absolute;
   width: 275.6px;
-  bottom: 47px;
-  left: 104.5px;
+  bottom: 45px;
+  right: 76px;
 
   @media (max-width: $tablet) {
     height: 484.63px;
     width: 223.96px;
-    left: 120px;
-    bottom: 41px;
-    // left: 43px;
+    bottom: 40px;
+    right: 67px;
   }
 
   @media (max-width: $mobile) {
-    height: 320.68px;
-    width: 148.2px;
-    bottom: 28px;
-    left: 39%;
+  height: 321px;
+  width: 148px;
+  right: auto;
+  left: 50%;
+  margin-left: -74px;
+  bottom: -28px;
   }
 
-  @media (max-width: 680px) {
-    left: 40%;
-  }
+  // @media (max-width: $tablet) {
+  //   height: 484.63px;
+  //   width: 223.96px;
+  //   left: 120px;
+  //   bottom: 41px;
+  // }
 
-  @media (max-width: 550px) {
-    left: 178px;
-  }
-
-  @media (max-width: 420px) {
-    left: 128px;
-  }
-
-  
-
-  @media (max-width: $mobile-sm) {
-    left: 53px;
-  }
-
-  // @media (max-width: $mobile-ssm) {
-  //   left: 78px;
+  // @media (max-width: $mobile) {
+  //   height: 320.68px;
+  //   width: 148.2px;
+  //   bottom: 28px;
+  //   left: 39%;
+  //   left: 39%;
   // }
 }
 
@@ -1959,25 +1988,22 @@ body {
   color: $violet;
   font-family: "LatoBold";
   position: absolute;
-  left: 40%;
+  left: 50%;
   top: 425px;
+  margin-left: -93px;
 
   @media (max-width: $mobile) {
     display: block;
   }
 
-  @media (max-width: 450px) {
-    left: 30%;
-  }
+  // @media (max-width: $mobile-sm) {
+  //   left: 87px;
+  // }
 
-  @media (max-width: $mobile-sm) {
-    left: 87px;
-  }
-
-  @media (max-width: $mobile-ssm) {
-    left: 70px;
-    font-size: 14;
-  }
+  // @media (max-width: $mobile-ssm) {
+  //   left: 70px;
+  //   font-size: 14;
+  // }
 }
 
 .offers__header {
@@ -2079,16 +2105,16 @@ body {
   @media (max-width: $mobile) {
     width: 210px;
     height: 154.32px;
-    left: 25%;
-    top: -60px;
-  }
-
-  @media (max-width: $mobile-sm) {
-    width: 210px;
-    height: 154.32px;
     left: 0;
     top: -60px;
   }
+
+  // @media (max-width: $mobile-sm) {
+  //   width: 210px;
+  //   height: 154.32px;
+  //   left: 0;
+  //   top: -60px;
+  // }
 }
 
 .offers__description {
@@ -2114,16 +2140,16 @@ body {
   @media (max-width: $mobile) {
     width: 335px;
     height: 179px;
-    right: 25%;
-    background: url("../img/offers__bg--mobile.svg") no-repeat center;
-  }
-
-  @media (max-width: $mobile-sm) {
-    width: 335px;
-    height: 179px;
     right: 0;
     background: url("../img/offers__bg--mobile.svg") no-repeat center;
   }
+
+  // @media (max-width: $mobile-sm) {
+  //   width: 335px;
+  //   height: 179px;
+  //   right: 0;
+  //   background: url("../img/offers__bg--mobile.svg") no-repeat center;
+  // }
 }
 
 .offers__description__content {
