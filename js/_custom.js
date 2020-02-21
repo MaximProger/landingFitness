@@ -132,7 +132,7 @@ $(window).resize(function(){
         // Intro
         // $('.intro__woman').attr("src","./img/woman--tablet.png");
         // $('.intro__img__fitness').attr("src","./img/Fitness--tablet.svg");
-
+        sliderIsLive = true;
         // Tranings
         $('.tranings__inner').addClass('tranings__slider');
         $('.tranings__item__border').removeAttr('id');
@@ -141,7 +141,7 @@ $(window).resize(function(){
             slidesToScroll: 1,
             autoplaySpeed: 2000,
             nextArrow: $('#traningsNext'),
-            prevArrow: $('#traningsPrev'),
+            prevArrow: $('#traningsPrev')
           });
 
         // Offers
@@ -154,12 +154,20 @@ $(window).resize(function(){
             nextArrow: $('#offersNext'),
             prevArrow: $('#offersPrev')
           });
+    } else {
+        $('.offers__inner').filter('.slick-initialized').slick('unslick');
+        $('.tranings__inner').filter('.slick-initialized').slick('unslick');
     }
+
    if ($(window).width() <= '767'){
         $('#inputEmail').attr("placeholder", "Ваше имя*");
         $('#inputMessage').attr("placeholder", "Телефон*");
     }
   });
+
+  
+
+  
    
   // вызовем событие resize
   $(window).resize();
