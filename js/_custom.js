@@ -126,6 +126,28 @@ $('.tranings__item').on("mouseout", function() {
     $('.tranings__item__border').attr("src","./img/border.svg");
 })
 
+// Offers Item
+
+$('#offersItem-1').on("mouseover", function() {
+    $("#offersLine-1").attr("src","./img/offers_line--yellow.svg");
+})
+
+$('#offersItem-2').on("mouseover", function() {
+    $("#offersLine-2").attr("src","./img/offers_line--yellow.svg");
+})
+
+$('#offersItem-3').on("mouseover", function() {
+    $("#offersLine-3").attr("src","./img/offers_line--yellow.svg");
+})
+
+$('#offersItem-4').on("mouseover", function() {
+    $("#offersLine-4").attr("src","./img/offers_line--yellow.svg");
+})
+
+$('.offers__item').on("mouseout", function() {
+    $(".offers__line").attr("src","./img/offers_line.svg");
+})
+
 // установим обработчик события resize
 $(window).resize(function(){
     if ($(window).width() <= '1199'){
