@@ -2097,7 +2097,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin-top: 37px;
+  margin-top: 20px;
   flex-wrap: wrap;
   max-width: 100%;
   max-height: 100%;
@@ -2111,13 +2111,17 @@ body {
   transition: background 0.2s linear, color 0.2s linear;
 
   &:nth-child(3) {
-    margin-top: 40px;
+    margin-top: 10px;
 
-    .offers__description__title {
+    // .offers__description__title {
     
-      // &::after {
-      //   top: 45px;
-      // }
+    //   // &::after {
+    //   //   top: 45px;
+    //   // }
+    // }
+
+    @media (max-width: $tablet) {
+      margin-top: 37px;
     }
 
     @media (max-width: $mobile) {
@@ -2126,13 +2130,17 @@ body {
   }
 
   &:nth-child(4) {
-    margin-top: 40px;
+    margin-top: 10px;
 
-    .offers__description__title {
+    // .offers__description__title {
     
-      // &::after {
-      //   top: 45px;
-      // }
+    //   // &::after {
+    //   //   top: 45px;
+    //   // }
+    // }
+
+    @media (max-width: $tablet) {
+      margin-top: 37px;
     }
 
     @media (max-width: $mobile) {
@@ -2168,6 +2176,10 @@ body {
       //   }
       // }
     }
+  }
+
+  @media (max-width: $tablet) {
+    margin-top: 37px;
   }
 
   @media (max-width: $mobile) {
@@ -2396,11 +2408,11 @@ body {
 
 .connection__content {
   width: 455px;
-  padding-top: 115px;
+  padding-top: 92px;
 
   @media (max-width: $tablet) {
     width: 381px;
-    padding-top: 170px;
+    padding-top: 140px;
   }
 
   @media (max-width: $mobile) {
@@ -2469,7 +2481,7 @@ body {
 
 .connection__photo {
   position: absolute;
-  top: 45px;
+  top: 30px;
   left: 545px;
   width: 674px;
   height: 836px;
@@ -2479,8 +2491,8 @@ body {
   @media (max-width: $tablet) {
     width: 495.87px;
     height: 1019px;
-    left: 420px;
-    top: 0px;
+    left: 410px;
+    top: -30px;
   }
 
   @media (max-width: $mobile) {
@@ -2604,10 +2616,14 @@ body {
 // Footer
 .footer {
   position: absolute;
-  bottom: 30px;
+  bottom: 50px;
   left: 11px;
   right: 0;
   z-index: 1000;
+
+  @media (max-width: $mobile) {
+    bottom: 30px;
+  }
 }
 
 .footer__inner {
